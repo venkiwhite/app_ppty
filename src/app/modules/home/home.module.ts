@@ -7,6 +7,7 @@ import { HomeLayoutComponent } from './home-layout/home-layout.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { ProjectGroupComponent } from './project-group/project-group.component';
+import { ReviewCardComponent} from './../../core/review-card/review-card.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,6 @@ import { ProjectGroupComponent } from './project-group/project-group.component';
     HomeRoutingModule
   ],
   declarations: [TestimonialsGroupComponent, HomeLayoutComponent, SearchBarComponent,
-    SearchPageComponent, ProjectGroupComponent]
+    SearchPageComponent, ProjectGroupComponent, ReviewCardComponent]
 })
 export class HomeModule { }

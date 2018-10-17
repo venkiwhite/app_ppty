@@ -1,0 +1,13 @@
+/**
+ *  Add Styles for Material CSS here
+*/
+
+@import 'variables.scss';
+
+
+header, footer {
+    .mat-toolbar-row, .mat-toolbar-single-row {
+        height: 45px;
+        padding: 0px $padding-big;
+    }
+}

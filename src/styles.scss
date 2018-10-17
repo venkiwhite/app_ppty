@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./assets/styles/material-styles.scss";
+@import '~material-design-icons/iconfont/material-icons.css';
+
+body {
+  margin: 0
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.flex-space {
+  flex: 1 1 auto;
+}

@@ -1,0 +1,8 @@
+<button mat-button [matMenuTriggerFor]="menu">
+  <mat-icon class="loc-icon">location_on</mat-icon> Buy in {{location}} <mat-icon>keyboard_arrow_down</mat-icon>
+</button>
+<mat-menu #menu="matMenu" [xPosition]="'before'">
+  <button mat-menu-item *ngFor="let city of availableLocationArray" (click)="location=city">
+    {{city}}
+  </button>
+</mat-menu>

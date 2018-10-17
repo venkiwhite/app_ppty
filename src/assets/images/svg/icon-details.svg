@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="20" viewBox="0 0 17 20">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#color-overlay-1);
+      }
+
+      .cls-1, .cls-2 {
+        font-size: 23px;
+      }
+
+      .cls-2 {
+        fill: #666;
+        font-family: "FontAwesome";
+      }
+    </style>
+
+    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="solidFill"/>
+    </filter>
+  </defs>
+  <text y="18" class="cls-1"><tspan class="cls-2"></tspan></text>
+</svg>

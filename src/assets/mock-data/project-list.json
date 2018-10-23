@@ -15,5 +15,17 @@
         "title": "Global",
         "details": "4Bhk",
         "location": "Kengeri"
+    },
+    {
+        "id": "4",
+        "title": "Lotus Grand",
+        "details": "2Bhk",
+        "location": "Uttarahalli"
+    },
+    {
+        "id": "5",
+        "title": "Sankara PG",
+        "details": "3Bhk",
+        "location": "Mylasandra"
     }
 ]

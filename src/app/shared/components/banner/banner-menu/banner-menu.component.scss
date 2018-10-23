@@ -1,15 +1,20 @@
 @import 'src/assets/styles/variables.scss';
 
 .banner-menu {
-    display: flex;
     height: 85px;
     background-color: rgba(0,0,0,0.5);
-    padding: 0px $padding-big;
+    .container {
+        height: 85px;
+        text-align: right;
+    }
+}
+
+.banner-logo, .banner-menu-items {
+    display: inline-block;
 }
 
 .banner-menu-items {
     font-size: 14px;
-    line-height: 50px;
     height: inherit;
     button {
         height: inherit;

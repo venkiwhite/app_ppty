@@ -1,5 +1,10 @@
 <mat-card class="project-card" *ngIf="inputData">
-  <img mat-card-image src="/src/assets/images/tumbnail-370.jpg" alt="thumbnail">
+  <div class="card-image">
+    <div class="building-type"></div>
+    <div class="featured-flag"><mat-icon>star</mat-icon><span>featured</span></div>
+    <div class="overlay-details">1212</div>
+    <img mat-card-image src="/src/assets/images/tumbnail-370.jpg" alt="thumbnail">
+  </div>
   <mat-card-header>
     <mat-card-title>{{inputData.title}}</mat-card-title>
     <mat-card-subtitle>{{inputData.details}}</mat-card-subtitle>

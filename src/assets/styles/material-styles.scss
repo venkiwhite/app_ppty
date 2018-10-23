@@ -7,14 +7,24 @@
 
 header, footer {
     .mat-toolbar-row, .mat-toolbar-single-row {
-        height: 45px;
+        height: $small-header-height;
         padding: 0px $padding-big;
+        width: inherit !important;
+    }
+}
+
+.mat-toolbar.mat-primary {
+    .container {
+        height: $small-header-height;
+        display: inline-block;
+        text-align: right;
     }
 }
 
 mat-card {
     display: inline-block !important;
-    margin-right: 10px;
+    margin: 0 0 20px 20px;
+    padding: 0 24px !important;
     div {
         margin-top: 10px;
     }

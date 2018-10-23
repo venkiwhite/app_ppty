@@ -1,10 +1,8 @@
-<app-search-bar></app-search-bar>
-<div class="main-container">
+<div class="container">
+  <app-search-bar></app-search-bar>
   <app-project-group *ngIf="trendingProjects" [inputData]="trendingProjects"></app-project-group>
   <app-project-group *ngIf="featuredProjects" [inputData]="featuredProjects"></app-project-group>
   <app-testimonials-group></app-testimonials-group>
-</div>  
-<app-search-page></app-search-page>
-
-<app-review-card></app-review-card>
-
+  <app-search-page></app-search-page>
+  <app-review-card></app-review-card>
+</div>

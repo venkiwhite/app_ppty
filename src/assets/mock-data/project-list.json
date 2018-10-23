@@ -1,0 +1,19 @@
+[{
+        "id": "1",
+        "title": "Brigade",
+        "details": "2Bhk",
+        "location": "Kanakapura road"
+    },
+    {
+        "id": "2",
+        "title": "Nisarga",
+        "details": "3Bhk",
+        "location": "KS town"
+    },
+    {
+        "id": "3",
+        "title": "Global",
+        "details": "4Bhk",
+        "location": "Kengeri"
+    }
+]

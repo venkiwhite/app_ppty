@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataServiceService } from './../../../shared/services/data-service.service';
 @Component({
   selector: 'app-home-layout',
   templateUrl: './home-layout.component.html',
@@ -11,13 +11,20 @@ export class HomeLayoutComponent implements OnInit {
   trendingProjects: ProjectGroup;
   featuredProjects: ProjectGroup;
 
-  constructor() {
-    this.trendingProjects = new ProjectGroup('Trending Projects', []);
-    this.featuredProjects = new ProjectGroup('Featured Projects', []);
-   }
+  constructor(private dataServiceService: DataServiceService) {
+  }
 
   ngOnInit() {
-    console.log('conponent init..');
+    this.getProjects();
+  }
+
+  getProjects() {
+    this.dataServiceService.getProjects('trending').subscribe( (response) => {
+      this.trendingProjects = new ProjectGroup('Trending Projects', response);
+    });
+    this.dataServiceService.getProjects('featured').subscribe( (response) => {
+      this.featuredProjects = new ProjectGroup('Featured Projects', response);
+    });
   }
 
 }

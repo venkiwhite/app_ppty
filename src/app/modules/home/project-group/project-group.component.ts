@@ -9,9 +9,12 @@ export class ProjectGroupComponent implements OnInit {
 
   @Input() inputData;
 
+  projectCards = [];
+
   constructor() { }
 
   ngOnInit() {
+    this.projectCards = this.inputData.data;
   }
 
 }

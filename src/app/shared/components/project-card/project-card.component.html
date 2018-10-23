@@ -1,0 +1,15 @@
+<mat-card class="project-card" *ngIf="inputData">
+  <img mat-card-image src="/src/assets/images/tumbnail-370.jpg" alt="thumbnail">
+  <mat-card-header>
+    <mat-card-title>{{inputData.title}}</mat-card-title>
+    <mat-card-subtitle>{{inputData.details}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <div>
+    <button mat-raised-button color="primary" class="action-btn">Details</button>
+    <mat-card-header>
+      <mat-card-subtitle>Location</mat-card-subtitle>
+      <mat-card-title>{{inputData.location}}</mat-card-title>
+    </mat-card-header>
+  </div>
+</mat-card>

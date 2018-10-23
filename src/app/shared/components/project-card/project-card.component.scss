@@ -1,0 +1,21 @@
+.project-card {
+    width: 370px;
+}
+
+.action-btn {
+    float: right;
+}
+
+
+mat-card {
+    display: inline-block;
+    margin-right: 10px;
+    div {
+        margin-top: 10px;
+    }
+}
+
+.mat-card .mat-divider-horizontal {
+    margin-left: 5%;
+    width: 90%;
+}

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 // Custom Modules
 import { SharedModule } from './shared/modules/shared/shared.module';
@@ -14,6 +15,9 @@ import { BannerComponent } from './shared/components/banner/banner.component';
 import { BannerMenuComponent } from './shared/components/banner/banner-menu/banner-menu.component';
 import { BannerWindowComponent } from './shared/components/banner/banner-window/banner-window.component';
 import { TitleCardComponent } from './shared/components/title-card/title-card.component';
+
+// Services
+import { DataServiceService } from './shared/services/data-service.service';
 
 @NgModule({
   declarations: [
@@ -30,9 +34,10 @@ import { TitleCardComponent } from './shared/components/title-card/title-card.co
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

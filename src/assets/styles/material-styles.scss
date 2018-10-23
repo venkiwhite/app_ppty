@@ -11,3 +11,16 @@ header, footer {
         padding: 0px $padding-big;
     }
 }
+
+mat-card {
+    display: inline-block !important;
+    margin-right: 10px;
+    div {
+        margin-top: 10px;
+    }
+}
+
+.mat-card .mat-divider-horizontal {
+    margin-left: 5%;
+    width: 90% !important;
+}

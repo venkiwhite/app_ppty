@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 // Custom Modules
 import { SharedModule } from './../../shared/modules/shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
-import { TestimonialsGroupComponent } from './testimonials-group/testimonials-group.component';
 import { HomeLayoutComponent } from './home-layout/home-layout.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SearchPageComponent } from './search-page/search-page.component';
@@ -18,7 +17,7 @@ import { TitleCardComponent } from './../../shared/components/title-card/title-c
     HomeRoutingModule,
     SharedModule
   ],
-  declarations: [TestimonialsGroupComponent, HomeLayoutComponent, SearchBarComponent,
+  declarations: [HomeLayoutComponent, SearchBarComponent,
     SearchPageComponent, ProjectGroupComponent, ReviewCardComponent, ProjectCardComponent, TitleCardComponent]
 })
 export class HomeModule { }

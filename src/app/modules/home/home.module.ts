@@ -10,6 +10,7 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { ProjectGroupComponent } from './project-group/project-group.component';
 import { ReviewCardComponent} from './../../core/review-card/review-card.component';
 import { ProjectCardComponent } from './../../shared/components/project-card/project-card.component';
+import { TitleCardComponent } from './../../shared/components/title-card/title-card.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { ProjectCardComponent } from './../../shared/components/project-card/pro
     SharedModule
   ],
   declarations: [TestimonialsGroupComponent, HomeLayoutComponent, SearchBarComponent,
-    SearchPageComponent, ProjectGroupComponent, ReviewCardComponent, ProjectCardComponent]
+    SearchPageComponent, ProjectGroupComponent, ReviewCardComponent, ProjectCardComponent, TitleCardComponent]
 })
 export class HomeModule { }

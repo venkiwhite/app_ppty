@@ -1,14 +1,16 @@
+@import './../../../assets/styles/variables';
+
 .review-card {
     display: flex;
     &>div {
-        background-color: #f1f1f1;
+        background-color: $seashell;
         margin: 10px;
     }
 }
 
 .review-card-list {
     display: flex;
-    background-color: #FFF;
+    background-color: $white;
     &>div {
         font-size: 30px;
         width: 280px;
@@ -25,7 +27,7 @@
         line-height: 1.71;
         letter-spacing: normal;
         text-align: right;
-        color: #000000;
+        color: $black;
     }
 }
 
@@ -42,4 +44,16 @@
     letter-spacing: normal;
     text-align: right;
     color: rgba(0, 0, 0, 0.2);
+}
+
+.title-card-panel {
+    >div {
+        display: inline-block;
+        width: 80%;
+    }
+    div.custom-pagination {
+        width: 20%;
+        height: 20px;
+        background-color: $silver; 
+    }
 }

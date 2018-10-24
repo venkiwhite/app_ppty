@@ -14,7 +14,6 @@ import { BuyInMenuComponent } from './shared/components/buy-in-menu/buy-in-menu.
 import { BannerComponent } from './shared/components/banner/banner.component';
 import { BannerMenuComponent } from './shared/components/banner/banner-menu/banner-menu.component';
 import { BannerWindowComponent } from './shared/components/banner/banner-window/banner-window.component';
-import { TitleCardComponent } from './shared/components/title-card/title-card.component';
 
 // Services
 import { DataServiceService } from './shared/services/data-service.service';
@@ -27,8 +26,7 @@ import { DataServiceService } from './shared/services/data-service.service';
     BuyInMenuComponent,
     BannerComponent,
     BannerMenuComponent,
-    BannerWindowComponent,
-    TitleCardComponent
+    BannerWindowComponent
   ],
   imports: [
     BrowserModule,

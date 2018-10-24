@@ -3,6 +3,10 @@
 @import "./assets/styles/material-styles.scss";
 @import '~material-design-icons/iconfont/material-icons.css';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0
 }

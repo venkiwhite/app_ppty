@@ -1,0 +1,62 @@
+@import './variables';
+.ply-inline-input-action {
+    width: 270px;
+    height: 34px;
+    margin-top: 20px;
+    input {
+        height: 34px;
+        width: 180px;
+        padding: 0;
+        margin: 0;
+        border: solid 1px #333c44;
+        background-color: #434b51;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.25;
+        letter-spacing: 0.5px;
+        color: $white;
+        outline: none;
+    }
+    button {
+        width: 86px;
+        height: 34px;
+        background-color: #26282a;
+        padding: 0;
+        margin: 0;
+        border: none;
+        font-family: OpenSans;
+        font-size: 13px;
+        line-height: 1.15;
+        letter-spacing: 0.5px;
+        color: $white;
+    }
+}
+
+.ply-inline-no-action {
+    height: 30px;
+    border-radius: 5px;
+    >div {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 7px;
+        padding-left: 5px;
+        &.ply-icon {
+            width: 32px;
+            height: 30px;
+            background-color: #343a40;
+        }
+        &.ply-label {
+            width: 173px;
+            height: 30px;
+            background-color: #434b51;
+            font-family: OpenSans;
+            font-size: 13px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.15;
+            letter-spacing: normal;
+        }
+    }
+}

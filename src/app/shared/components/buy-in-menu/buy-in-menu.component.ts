@@ -11,7 +11,7 @@ export class BuyInMenuComponent implements OnInit {
   availableLocationArray;
 
   constructor() {
-    this.availableLocationArray = ['Bangalore', 'Example'];
+    this.availableLocationArray = ['Bangalore', 'Coimbatore', 'Chennai'];
     this.location = this.availableLocationArray[0];
   }
 

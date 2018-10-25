@@ -5,8 +5,11 @@
 @import 'variables.scss';
 
 
-header, footer {
-    .mat-toolbar-row, .mat-toolbar-single-row {
+header,
+footer {
+
+    .mat-toolbar-row,
+    .mat-toolbar-single-row {
         height: $small-header-height;
         padding: 0px $padding-big;
         width: inherit !important;
@@ -21,16 +24,29 @@ header, footer {
     }
 }
 
-mat-card {
-    display: inline-block !important;
-    margin: 0 0 20px 20px;
-    padding: 0 24px !important;
-    div {
-        margin-top: 10px;
+.project-mat-card {
+    mat-card {
+        display: inline-block !important;
+        margin: 0 0 20px 20px;
+        padding: 0 24px !important;
+
+        div {
+            margin-top: 10px;
+        }
+    }
+
+    .mat-card .mat-divider-horizontal {
+        margin-left: 5%;
+        width: 90% !important;
     }
 }
 
-.mat-card .mat-divider-horizontal {
-    margin-left: 5%;
-    width: 90% !important;
+.window-card {
+    mat-card {
+        height: 100%;
+    }
+}
+
+.mat-raised-button {
+    border-radius: 5px !important;
 }

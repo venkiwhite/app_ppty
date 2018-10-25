@@ -1,3 +1,16 @@
-<p>
-  banner-window works!
-</p>
+<div class="window-container" *ngIf="displayedData">
+  <div class="window-card">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{displayedData.title}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{displayedData.details}}
+        </p>
+      </mat-card-content>
+      <button mat-raised-button color="primary" class="action-btn">{{displayedData.amount}}</button>
+      <button mat-raised-button color="accent" class="action-btn">Details</button>
+    </mat-card>
+  </div>
+</div>

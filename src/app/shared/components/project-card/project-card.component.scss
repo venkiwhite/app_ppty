@@ -1,5 +1,9 @@
 @import 'src/assets/styles/variables.scss';
 
+.project-mat-card{
+    display: inline-block;
+}
+
 .project-card {
     width: $card-width;
 }

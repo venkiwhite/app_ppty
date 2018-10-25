@@ -5,7 +5,7 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class DataServiceService {
+export class BannerServiceService {
 
   configUrs;
   storedResponse: StoredResponse = new StoredResponse();
@@ -14,14 +14,12 @@ export class DataServiceService {
     this.configUrs = environment;
   }
 
-  getProjects(projectType) {
-    this.storedResponse.projectList = this.http.get(this.configUrs.api.projectList);
-    return this.storedResponse.projectList;
+  getBannerWindowProjects() {
+    this.storedResponse.bannerWindowProjectList = this.http.get(this.configUrs.api.bannerWindowProjectList);
+    return this.storedResponse.bannerWindowProjectList;
   }
-
-
 }
 
 class StoredResponse {
-  projectList;
+  bannerWindowProjectList;
 }

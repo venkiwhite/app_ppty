@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   base: '',
   api: {
-    projectList: 'assets/mock-data/project-list.json'
+    projectList: 'assets/mock-data/project-list.json',
+    bannerWindowProjectList: 'assets/mock-data/banner-window-projects.json'
   }
 };
 

@@ -1,20 +1,23 @@
-<mat-card class="project-card" *ngIf="inputData">
-  <div class="card-image">
-    <div class="building-type"></div>
-    <div class="featured-flag"><mat-icon>star</mat-icon><span>featured</span></div>
-    <div class="overlay-details">1212</div>
-    <img mat-card-image src="/src/assets/images/dummy/{{inputData.image}}" alt="thumbnail">
-  </div>
-  <mat-card-header>
-    <mat-card-title>{{inputData.title}}</mat-card-title>
-    <mat-card-subtitle>{{inputData.details}}</mat-card-subtitle>
-  </mat-card-header>
-  <mat-divider></mat-divider>
-  <div>
-    <button mat-raised-button color="primary" class="action-btn">Details</button>
+<div class="project-mat-card">
+  <mat-card class="project-card" *ngIf="inputData">
+    <div class="card-image">
+      <div class="building-type"></div>
+      <div class="featured-flag"><mat-icon>star</mat-icon><span>featured</span></div>
+      <div class="overlay-details">1212</div>
+      <img mat-card-image src="/src/assets/images/dummy/{{inputData.image}}" alt="thumbnail">
+    </div>
     <mat-card-header>
-      <mat-card-subtitle>Location</mat-card-subtitle>
-      <mat-card-title>{{inputData.location}}</mat-card-title>
+      <mat-card-title>{{inputData.title}}</mat-card-title>
+      <mat-card-subtitle>{{inputData.details}}</mat-card-subtitle>
     </mat-card-header>
-  </div>
-</mat-card>
+    <mat-divider></mat-divider>
+    <div>
+      <button mat-raised-button color="primary" class="action-btn">Details</button>
+      <mat-card-header>
+        <mat-card-subtitle>Location</mat-card-subtitle>
+        <mat-card-title>{{inputData.location}}</mat-card-title>
+      </mat-card-header>
+    </div>
+  </mat-card>
+</div>
+

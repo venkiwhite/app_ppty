@@ -1,0 +1,17 @@
+@import 'src/assets/styles/variables.scss';
+
+.window-container {
+    width: 500px;
+    height: 330px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 30px;
+    padding: 30px;
+    position: relative;
+    float: right;
+}
+
+.window-card {
+    text-align: left;
+    height: 100%;
+    padding-top: 50px;
+}

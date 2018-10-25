@@ -1,0 +1,66 @@
+@import './../../../assets/styles/variables';
+.ply-footer-panel {
+    background-color: $charcoal-secondary;
+    // width: 100%;
+}
+.ply-footer-menu {
+    display: flex;
+    padding: 25px 0 0px 0px;
+    height: 250px;
+    font-family: $font-primary;
+    color: $white;
+    >div {
+        width: 20%;
+        margin-left: 35px;
+    }
+    .ply-action-title {
+        font-size: 19px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.79;
+        letter-spacing: normal;
+        text-align: left;
+        margin-top: 14px;
+        margin-bottom: 20px;
+    }
+    nav {
+        a {
+            display: block;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 100;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            text-align: left;
+            color: $white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.ply-logo {
+    width: 200px;
+    height: 50px;
+}
+
+.ply-logo-content {
+    font-size: 13px;
+    line-height: 1.70;
+}
+
+.ply-csupport {
+    >div {
+        margin-top: $gap-vertical-medium;
+    }
+}
+
+.ply-news-letter {
+    .ply-news-content {
+        font-size: 13px;
+        line-height: 1.70;
+    }
+}

@@ -16,6 +16,12 @@ footer {
     }
 }
 
+footer {
+    .mat-toolbar-single-row {
+        height: $height-medium;
+    }
+}
+
 .mat-toolbar.mat-primary {
     .container {
         height: $small-header-height;

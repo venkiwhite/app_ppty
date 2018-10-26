@@ -1,8 +1,8 @@
 @import './../../../assets/styles/variables';
 .ply-footer-panel {
-    background-color: $charcoal-secondary;
-    // width: 100%;
+    background-color: $charcoal-secondary; // width: 100%;
 }
+
 .ply-footer-menu {
     display: flex;
     padding: 25px 0 0px 0px;
@@ -62,5 +62,47 @@
     .ply-news-content {
         font-size: 13px;
         line-height: 1.70;
+    }
+}
+
+.ply-copyright {
+    font-family: Roboto;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.ply-footer-panel {
+    .mat-toolbar.mat-primary {
+        .container {
+            text-align: left;
+            display: flex;
+            >div:first-child {
+                width: 50%;
+            }
+            .ply-icon-gototop {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .ply-social-media {
+                padding-top: 10px;
+            }
+            >ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-align: right;
+                width: 48%;
+                li {
+                    display: inline-block;
+                    margin-left: 12px;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
     }
 }

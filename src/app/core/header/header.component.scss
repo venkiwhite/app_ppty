@@ -20,3 +20,9 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 799px) {
+    .customer-care {
+        display: none;
+    }
+}

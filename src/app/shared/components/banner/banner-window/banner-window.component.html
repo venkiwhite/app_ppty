@@ -1,16 +1,31 @@
-<div class="window-container" *ngIf="displayedData">
+<div class="window-container" *ngIf="projectList">
+
+  <app-pagination *ngIf="paginationData" [inputData]="paginationData" (clicked)="getBannerWindowProjects($event)">
+  </app-pagination>
+
   <div class="window-card">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>{{displayedData.title}}</mat-card-title>
+        <mat-card-title>{{projectList.title}}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <p>
-          {{displayedData.details}}
+          {{projectList.details}}
+        </p>
+        <p>
+          <span class="window-amenity" *ngFor="let amenity of projectList.amenities">
+            {{amenity.value}}
+          </span>
+        </p>
+        <p>
+          <mat-divider></mat-divider>
         </p>
       </mat-card-content>
-      <button mat-raised-button color="primary" class="action-btn">{{displayedData.amount}}</button>
-      <button mat-raised-button color="accent" class="action-btn">Details</button>
+      <div class="window-action-btn">
+        <button mat-raised-button color="primary">{{projectList.amount}}</button>
+        <button mat-raised-button color="accent">Details</button>
+      </div>
+
     </mat-card>
   </div>
 </div>

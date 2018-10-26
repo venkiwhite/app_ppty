@@ -22,22 +22,41 @@ body, html {
   margin-left: auto;
 }
 
-@media (min-width: 768px) {
+
+@media (max-width: 767px) {
   .container {
-    width: 708px;
+    width: calc(100vw - 100px);
   }
+  .project-card, .card-image .overlay-details {
+    width: calc((100vw - 100px) / 1.5 - 20px);
+}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .container {
-    width: 872px;
+    width: calc(100vw - 100px);
   }
+  .project-card, .card-image .overlay-details {
+    width: calc((100vw - 100px) / 2 - 20px);
+}
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: calc(100vw - 100px);
+  }
+  .project-card, .card-image .overlay-details {
+    width: calc((100vw - 100px) / 3 - 20px);
+}
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1080px;
   }
+  .project-card,  .card-image .overlay-details {
+    width: calc(1080px / 3 - 20px);
+}
 }
 
 .flex-space {

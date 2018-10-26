@@ -78,33 +78,33 @@
         display: inline-block;
         width: 90%;
     }
-    div.custom-pagination {
-        width: 10%;
-        height: 20px;
-        position: relative;
-        right: 0; // background-color: $silver;
-    }
+    // div.custom-pagination {
+    //     width: 10%;
+    //     height: 20px;
+    //     position: relative;
+    //     right: 0; // background-color: $silver;
+    // }
 }
 
-.ply-page-icon {
-    width: 51px;
-    height: 51px;
-    background-color: $charcoal;
-    cursor: pointer;
-    &.ply-page-active {
-        background-color: $razzmatazz;
-    }
-    img {
-        margin-top: 14px;
-        width: 10px;
-        height: 22px;
-        margin-left: 18px;
-    }
-}
+// .ply-page-icon {
+//     width: 51px;
+//     height: 51px;
+//     background-color: $charcoal;
+//     cursor: pointer;
+//     &.ply-page-active {
+//         background-color: $razzmatazz;
+//     }
+//     img {
+//         margin-top: 14px;
+//         width: 10px;
+//         height: 22px;
+//         margin-left: 18px;
+//     }
+// }
 
-.ply-page-arrow {
-    display: inline-block;
-}
+// .ply-page-arrow {
+//     display: inline-block;
+// }
 
 .ply-review-user {
     border-top: 1px solid $silver;

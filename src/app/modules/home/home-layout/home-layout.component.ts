@@ -20,10 +20,10 @@ export class HomeLayoutComponent implements OnInit {
 
   getProjects() {
     this.dataServiceService.getProjects('trending').subscribe( (response) => {
-      this.trendingProjects = new ProjectGroup('Trending Projects', response);
+      this.trendingProjects = new ProjectGroup('Trending Projects', response.data, response.page);
     });
     this.dataServiceService.getProjects('featured').subscribe( (response) => {
-      this.featuredProjects = new ProjectGroup('Featured Projects', response);
+      this.featuredProjects = new ProjectGroup('Featured Projects', response.data, response.page);
     });
   }
 
@@ -32,8 +32,10 @@ export class HomeLayoutComponent implements OnInit {
 class ProjectGroup {
   title;
   data;
-  constructor(title, data) {
+  page;
+  constructor(title, data, page) {
     this.title = title;
     this.data = data;
+    this.page = page;
   }
 }

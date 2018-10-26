@@ -33,7 +33,7 @@ footer {
 .project-mat-card {
     mat-card {
         display: inline-block !important;
-        margin: 0 0 20px 20px;
+        margin: 0 20px 20px 0;
         padding: 0 24px !important;
 
         div {
@@ -48,11 +48,25 @@ footer {
 }
 
 .window-card {
-    mat-card {
+    .mat-card {
         height: 100%;
+        background-color: $white-smoke;
+        border-radius: 0;
+        .mat-card-header .mat-card-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .mat-card-header-text {
+            margin: 0;
+        }
     }
 }
 
 .mat-raised-button {
     border-radius: 5px !important;
+}
+
+.mat-menu-panel .mat-menu-content:not(:empty) {
+    padding: 0;
 }

@@ -9,16 +9,20 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+
+import { PaginationComponent } from './../../components/pagination/pagination.component';
 
 @NgModule({
   imports: [
     CommonModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule
-    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule
+    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule
   ],
-  declarations: [],
+  declarations: [PaginationComponent],
   exports: [
     MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule
-    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule
+    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule,
+    PaginationComponent
   ]
 })
 export class SharedModule { }

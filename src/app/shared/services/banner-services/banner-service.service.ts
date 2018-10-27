@@ -14,12 +14,14 @@ export class BannerServiceService {
     this.configUrs = environment;
   }
 
-  getBannerWindowProjects() {
-    this.storedResponse.bannerWindowProjectList = this.http.get(this.configUrs.api.bannerWindowProjectList);
-    return this.storedResponse.bannerWindowProjectList;
+  getBannerWindowProjects(page) {
+    return this.http.request(
+      this.configUrs.api.bannerWindowProjectList.method,
+      this.configUrs.api.bannerWindowProjectList.url + page + '.json'
+    );
   }
 }
 
 class StoredResponse {
-  bannerWindowProjectList;
+  bannerWindowProjectList = [];
 }

@@ -18,6 +18,7 @@ import { BannerWindowComponent } from './shared/components/banner/banner-window/
 
 // Services
 import { DataServiceService } from './shared/services/data-service.service';
+import { OverlayMenuComponent } from './core/overlay-menu/overlay-menu.component';
 
 @NgModule({
   declarations: [
@@ -27,15 +28,15 @@ import { DataServiceService } from './shared/services/data-service.service';
     BuyInMenuComponent,
     BannerComponent,
     BannerMenuComponent,
-    BannerWindowComponent
+    BannerWindowComponent,
+    OverlayMenuComponent
   ],
   imports: [
+    SharedModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule,
-    HttpClientModule,
-    // ReactiveFormsModule
+    HttpClientModule
   ],
   providers: [DataServiceService],
   bootstrap: [AppComponent]

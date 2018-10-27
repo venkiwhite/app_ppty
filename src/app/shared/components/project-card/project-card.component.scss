@@ -4,10 +4,6 @@
     display: inline-block;
 }
 
-.project-card {
-    width: $card-width;
-}
-
 .action-btn {
     float: right;
 }
@@ -50,7 +46,6 @@
         position: absolute;
         height: 30px;
         bottom: 20px;
-        width: $card-width;
         padding: 24px;
         margin-left: -24px;
         background-color: rgba(0, 0, 0, 0.3);

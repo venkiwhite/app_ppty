@@ -4,5 +4,8 @@
       <span *ngFor="let card of projectCards">
         <app-project-card [inputData]="card"></app-project-card>
       </span>
+      <div class="pagination" >
+        <app-pagination *ngIf="paginationData" [inputData]="paginationData" (clicked)="changePage($event)"></app-pagination>
+      </div>
 </div>
 

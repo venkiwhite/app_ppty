@@ -1,0 +1,20 @@
+@import 'src/assets/styles/variables.scss';
+
+div.custom-pagination {
+    position: relative;
+    right: 0; // background-color: $silver;
+    button.ply-page-btn.mat-raised-button {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        padding: 0;
+        border-radius: 0 !important;
+        margin: 1px;
+    }
+    .mat-raised-button:not([class*=mat-elevation-z]){
+        box-shadow: none;
+    }
+    .mat-raised-button.mat-primary[disabled], .mat-raised-button[disabled][disabled] {
+        background-color: $charcoal;
+    }
+}

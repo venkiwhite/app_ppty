@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BannerServiceService } from './../../../services/banner-services/banner-service.service';
+import { PaginationInputData } from 'src/app/core/models/models';
 
 @Component({
   selector: 'app-banner-window',
@@ -9,25 +10,38 @@ import { BannerServiceService } from './../../../services/banner-services/banner
 export class BannerWindowComponent implements OnInit {
 
   projectList;
-  displayedData;
+  paginationData: PaginationInputData;
 
   constructor(private bannerServiceService: BannerServiceService) { }
 
   ngOnInit() {
-    this.getBannerWindowProjects();
+    this.getBannerWindowProjects(1);
   }
 
-  getBannerWindowProjects() {
-    if (!this.bannerServiceService.storedResponse.bannerWindowProjectList) {
-      return this.bannerServiceService.getBannerWindowProjects().subscribe( (response) => {
-        this.projectList = response;
-        console.log('called service', this.projectList);
-        this.displayedData = this.projectList[0];
+  getBannerWindowProjects(page) {
+    if (!this.bannerServiceService.storedResponse.bannerWindowProjectList[page]) {
+      console.log('calling service getBannerWindowProjects', page);
+      return this.bannerServiceService.getBannerWindowProjects(page).subscribe((response) => {
+        this.bannerServiceService.storedResponse.bannerWindowProjectList[page] = response;
+        this.updateData(response['data']);
+        this.updatePaginationInputData(response['page']);
       });
     } else {
-      this.projectList = this.bannerServiceService.storedResponse.bannerWindowProjectList;
-      this.displayedData = this.projectList[0];
+      const storedData = this.bannerServiceService.storedResponse.bannerWindowProjectList[page];
+      console.log('using storedData', storedData);
+      this.updateData(storedData['data']);
+      this.updatePaginationInputData(storedData['page']);
     }
   }
 
+  updateData(data) {
+    this.projectList = data;
+  }
+
+  updatePaginationInputData(page) {
+    this.paginationData = {
+      currentPage: page.currentPage,
+      maxValue: page.maxValue
+    };
+  }
 }

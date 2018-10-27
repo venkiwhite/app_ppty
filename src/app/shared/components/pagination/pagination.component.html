@@ -1,0 +1,8 @@
+<div class="custom-pagination">
+  <button mat-raised-button class="ply-page-btn" (click)="emitEvent('previous')" color="primary" [disabled]="currentPage === 1">
+    <img src="/assets/images/svg/arrow-left.svg" alt="Previous">
+  </button>
+  <button mat-raised-button class="ply-page-btn" (click)="emitEvent('next')" color="primary" [disabled]="currentPage >= inputData.maxValue">
+    <img src="/assets/images/svg/arrow-right.svg" alt="Next">
+  </button>
+</div>

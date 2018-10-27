@@ -1,0 +1,15 @@
+{
+"page": { "currentPage": 1, "maxValue": 3},
+"data":  {
+        "id": "1",
+        "title": "Salarpuria Sattva East crest",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet pharetra est. Vivamus vitae dui arcu. Vestibulum consectetur nunc in ex auctor feugiat.",
+        "amenities": [
+            {"type": "area", "value": "5000 Sq ft"},
+            {"type": "bedroom", "value": "3 bedrooms"},
+            {"type": "bathroom", "value": "2 bathrooms"},
+            {"type": "garage", "value": "1 garage"}
+        ],
+        "amount": "87Lakhs"
+    }
+}

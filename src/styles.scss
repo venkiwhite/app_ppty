@@ -4,6 +4,9 @@
 @import "./assets/styles/form-styles.scss";
 @import '~material-design-icons/iconfont/material-icons.css';
 
+@import "~font-awesome/css/font-awesome.css";
+
+
 * {
   box-sizing: border-box;
 }
@@ -13,7 +16,8 @@ body {
   background-color: $white-smoke;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 

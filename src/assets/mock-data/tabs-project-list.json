@@ -1,0 +1,26 @@
+{
+"page": { "currentPage": 1, "maxValue": 5},
+"data": [
+            {
+                "id": "1",
+                "title": "Brigade",
+                "details": "2Bhk",
+                "location": "Kanakapura road",
+                "image": "thumb4.jpg"
+            },
+            {
+                "id": "2",
+                "title": "Nisarga",
+                "details": "3Bhk",
+                "location": "KS town",
+                "image": "thumb1.jpg"
+            },
+            {
+                "id": "3",
+                "title": "Global",
+                "details": "4Bhk",
+                "location": "Kengeri",
+                "image": "thumb2.jpg"
+            }
+        ]
+}

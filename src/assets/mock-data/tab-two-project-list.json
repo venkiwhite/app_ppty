@@ -1,0 +1,29 @@
+{
+    "page": {
+        "currentPage": 1,
+        "maxValue": 5
+    },
+    "data": [
+        {
+            "id": "4",
+            "title": "Lotus Grand",
+            "details": "2Bhk",
+            "location": "Uttarahalli",
+            "image": "thumb3.jpg"
+        },
+        {
+            "id": "5",
+            "title": "Sankara PG",
+            "details": "3Bhk",
+            "location": "Mylasandra",
+            "image": "thumb4.jpg"
+        },
+        {
+            "id": "5",
+            "title": "Sankara PG",
+            "details": "3Bhk",
+            "location": "Mylasandra",
+            "image": "thumb1.jpg"
+        }
+    ]
+}

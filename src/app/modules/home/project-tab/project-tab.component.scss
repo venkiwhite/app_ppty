@@ -1,0 +1,57 @@
+@import './../../../../assets/styles/variables';
+.ply-tabs {
+    width: 95%;
+    .mat-tab-group {
+        border: 1px solid #CCC;
+        .mat-ink-bar {
+            top: 0;
+        }
+        .mat-tab-label {
+            border: 1px solid #CCC;
+            border-top: none;
+            &.mat-tab-label-active {
+                border-bottom: none;
+            }
+            &:first-child {
+                border-left: none;
+            }
+        }
+        .mat-tab-header {
+            border-bottom: none;
+        }
+    }
+    .mat-tab-body-wrapper {
+        padding: 10px;
+    }
+    .ply-tabs-pagination {
+        position: relative;
+        top: 240px;
+        z-index: 2;
+        .ply-page-action {
+            width: 30px;
+            height: 60px;
+            background-color: $razzmatazz;
+            color: $white;
+            text-align: center;
+            padding-top: 15px;
+            position: absolute;
+            cursor: pointer;
+            &.ply-page-next {
+                right: 1px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .ply-tabs {
+        .project-card,
+        .card-image .overlay-details {
+            width: calc(1080px / 3 - 30px);
+        }
+        .project-mat-card mat-card {
+            margin-right: 12px;
+            
+        }
+    }
+}

@@ -9,9 +9,7 @@
         <mat-card-title>{{projectList.title}}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p>
           {{projectList.details}}
-        </p>
         <p>
           <span class="window-amenity" *ngFor="let amenity of projectList.amenities">
             {{amenity.value}}

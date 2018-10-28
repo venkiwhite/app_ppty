@@ -34,7 +34,7 @@
 
 body {
   margin: 0;
-  background-color: $white-smoke;
+  background-color: $white-smoke !important;
 }
 
 body,
@@ -42,14 +42,14 @@ html {
   height: 100%;
 }
 
-.container {
+.ply-container {
   margin-right: auto;
   margin-left: auto;
 }
 
 
 @media (max-width: 767px) {
-  .container {
+  .ply-container {
     width: calc(100vw - 100px);
   }
 
@@ -60,7 +60,7 @@ html {
 }
 
 @media (min-width: 768px) {
-  .container {
+  .ply-container {
     width: calc(100vw - 100px);
   }
 
@@ -71,7 +71,7 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .container {
+  .ply-container {
     width: calc(100vw - 100px);
   }
 
@@ -82,7 +82,7 @@ html {
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .ply-container {
     width: 1080px;
   }
 

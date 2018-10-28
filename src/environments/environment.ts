@@ -7,6 +7,7 @@ export const environment = {
   base: '',
   api: {
     projectList: 'assets/mock-data/project-list.json',
+    tabsProjectList: 'assets/mock-data/',
     bannerWindowProjectList: {
       url: 'assets/mock-data/banner-window/banner-window-',
       method: 'GET'

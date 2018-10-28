@@ -19,6 +19,11 @@ export class DataServiceService {
     return this.storedResponse.projectList;
   }
 
+  getTabsProjects(projectType) {
+    const url = this.configUrs.api.tabsProjectList + projectType + '-project-list.json';
+    this.storedResponse.projectList = this.http.get(url);
+    return this.storedResponse.projectList;
+  }
 
 }
 

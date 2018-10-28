@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+// import { ReactiveFormsModule } from "@angular/forms";
 
 // Custom Modules
 import { SharedModule } from './shared/modules/shared/shared.module';

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Material
-import { MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatTabsModule} from '@angular/material';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSelectModule} from '@angular/material/select';
 import {MatMenuModule} from '@angular/material/menu';
@@ -16,13 +16,13 @@ import { PaginationComponent } from './../../components/pagination/pagination.co
 @NgModule({
   imports: [
     CommonModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule
-    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule
+    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule, MatTabsModule
   ],
   declarations: [PaginationComponent],
   exports: [
     MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule
     , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule,
-    PaginationComponent
+    PaginationComponent, MatTabsModule
   ]
 })
 export class SharedModule { }

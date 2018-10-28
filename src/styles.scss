@@ -4,6 +4,30 @@
 @import "./assets/styles/form-styles.scss";
 @import '~material-design-icons/iconfont/material-icons.css';
 
+@import "~font-awesome/css/font-awesome.css";
+
+* {
+  font-family: 'Roboto';
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(./assets/fonts/Roboto/Roboto-Regular.ttf) format('woff2'),
+    url(./assets/fonts/Roboto/Roboto-Regular.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(./assets/fonts/Roboto/Roboto-Bold.ttf) format('woff2'),
+    url(./assets/fonts/Roboto/Roboto-Bold.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url(./assets/fonts/Roboto/Roboto-Light.ttf) format('woff2'),
+    url(./assets/fonts/Roboto/Roboto-Light.ttf) format('woff');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,7 +37,8 @@ body {
   background-color: $white-smoke;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
@@ -27,36 +52,44 @@ body, html {
   .container {
     width: calc(100vw - 100px);
   }
-  .project-card, .card-image .overlay-details {
+
+  .project-card,
+  .card-image .overlay-details {
     width: calc((100vw - 100px) / 1.5 - 20px);
-}
+  }
 }
 
 @media (min-width: 768px) {
   .container {
     width: calc(100vw - 100px);
   }
-  .project-card, .card-image .overlay-details {
+
+  .project-card,
+  .card-image .overlay-details {
     width: calc((100vw - 100px) / 2 - 20px);
-}
+  }
 }
 
 @media (min-width: 1024px) {
   .container {
     width: calc(100vw - 100px);
   }
-  .project-card, .card-image .overlay-details {
+
+  .project-card,
+  .card-image .overlay-details {
     width: calc((100vw - 100px) / 3 - 20px);
-}
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1080px;
   }
-  .project-card,  .card-image .overlay-details {
+
+  .project-card,
+  .card-image .overlay-details {
     width: calc(1080px / 3 - 20px);
-}
+  }
 }
 
 .flex-space {

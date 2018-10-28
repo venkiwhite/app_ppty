@@ -1,0 +1,37 @@
+<div class="ply-tabs">
+  <div class="ply-tabs-pagination">
+      <div class="ply-page-action ply-page-prev"><</div>
+      <div class="ply-page-action ply-page-next">></div>
+    </div>
+  <mat-tab-group>
+    <mat-tab label="Ready to Move">
+      <div>
+        <div *ngIf="projectList.tab_one">
+          <span *ngFor="let card of projectList.tab_one">
+            <app-project-card [inputData]="card"></app-project-card>
+          </span>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Featured Localities">
+      <div>
+        <div *ngIf="projectList.tab_two">
+          <span *ngFor="let card of projectList.tab_two">
+            <app-project-card [inputData]="card"></app-project-card>
+          </span>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Featured Developers">
+      <div>
+        <div *ngIf="projectList.tab_two">
+          <span *ngFor="let card of projectList.tab_three">
+            <app-project-card [inputData]="card"></app-project-card>
+          </span>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Luxury Homes"> Content 3 </mat-tab>
+    <mat-tab label="Affordable Homes"> Content 3 </mat-tab>
+  </mat-tab-group>
+</div>

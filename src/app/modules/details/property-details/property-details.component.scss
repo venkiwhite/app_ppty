@@ -1,0 +1,134 @@
+@import '../../../../assets/styles/variables';
+
+.main-container {
+    background: $White-Smoke;
+    padding: 69px 0px;
+}
+
+.details-container {
+    margin: 0 auto;
+    background: $White-Smoke;
+    width: 1170px;
+}
+
+.left-pane {
+    display: inline-block;
+    margin-right: 30px;
+    background: $white;
+    width: 770px;
+    height: 1937px;
+}
+
+.right-pane {
+    display: inline-block;
+    width: 370px;
+    padding: 20px;
+    background: $white;
+    float: right;
+    height: 1937px;
+}
+
+.carousel-thumbnails {
+    width: 107px;
+    height: 66px;
+}
+
+.carousel-indicators {
+    position: relative;
+    top: 30px;
+    margin: 0 30px;
+}
+
+img.gallery-preview {
+    width: 770px;
+    height: 481px;
+}
+
+span.thumb-container {
+    margin: 0 5px;
+}
+
+.gallery-area {
+    height: 607px;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+    width: 30px;
+    height: 40px;
+    opacity: 0.8;
+    background-color: $night-rider;
+}
+
+span.carousel-control-prev-icon:hover,
+span.carousel-control-next-icon:hover,
+span.carousel-control-prev-icon:focus,
+span.carousel-control-next-icon:focus {
+    background-color: $ruby;
+
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: auto
+}
+
+.property-desc {
+    padding: 0 30px;
+}
+
+i {
+    font-family: 'FontAwesome';
+}
+
+.property-features {
+    padding: 10px 0px;
+    border-bottom: 1px solid $gainsboro;
+}
+
+.property-short-desc {
+    margin: 10px 0px 30px;
+}
+
+label.label-area,
+label.label-bathrooms,
+label.label-bedrooms {
+    margin-left: 10px;
+    font-family: 'Roboto-Light';
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.96;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black;
+}
+
+span.amenities {
+    margin-right: 20px;
+}
+
+.prop-desc {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: $dim-gray;
+}
+
+.property-name {
+    font-family: 'Roboto-Bold';
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black;
+}

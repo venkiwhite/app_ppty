@@ -1,6 +1,6 @@
 @import 'src/assets/styles/variables.scss';
 
-.project-mat-card{
+.project-mat-card {
     display: inline-block;
 }
 
@@ -13,41 +13,100 @@
 
     .building-type {
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.5);
         margin: 12px 0 0 -12px;
-        height: 40px;
-        width: 40px;
-        border-radius: 20px;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+
+        .mat-icon {
+            margin: 13px;
+            color: $white;
+        }
     }
 
     .featured-flag {
         position: absolute;
         right: 0;
-        width: 80px;
+        width: 85px;
         height: 30px;
         font-size: 14px;
         background-color: $featured-yellow;
         border-radius: 5px;
         margin-top: 18px;
         text-align: center;
-        mat-icon {
-            height: 14px;
-            width: 14px;
+        display: inline-block;
+
+        img {
+            margin-top: 5px;
         }
-        .material-icons {
-            font-size: 14px;
-        }
-        mat-icon, span {
-            margin-top: 6px;
+
+        span {
+            margin: 6px 6px 0 0;
+            float: right;
         }
     }
 
     .overlay-details {
         position: absolute;
-        height: 30px;
+        color: $white;
         bottom: 20px;
-        padding: 24px;
-        margin-left: -24px;
-        background-color: rgba(0, 0, 0, 0.3);
+        height: 60px;
+        padding: 16px 0 0 24px;
+        margin: 0 0 0 -24px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        >div {
+            display: inline-block;
+            width: 50%;
+            margin: 0;
+        }
+
+        .overlay-header {
+            font-size: 11px;
+            margin: 0;
+        }
+
+        .overlay-content {
+            font-size: 12px;
+            margin-top: 6px;
+        }
+
+
+    }
+}
+
+.project-card .mat-card-header {
+    .title.mat-card-title {
+        font-weight: bold !important;
+    }
+    .mat-card-subtitle {
+        font-size: 12px;
+
+    }
+    .details.mat-card-subtitle{
+        width: 100%;
+        >div {
+            display: inline-block;
+            width: 50%;
+            text-align: right;
+            margin: 0;
+        }
+        >div:first-child {
+            text-align: left;
+        }
+    }
+}
+
+.card-footer {
+    margin-top: 20px;
+    .mat-card-subtitle {
+        margin-bottom: 5px;
+    }
+    .mat-card-title {
+        margin-bottom: 24px;
+    }
+    .mat-card-header .mat-card-title {
+        font-size: 15px;
     }
 }

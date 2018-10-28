@@ -1,7 +1,7 @@
 @import './../../../../assets/styles/variables';
 .title-card-panel {
     position: relative;
-    width:80%;
+    // width:80%;
 }
 .title-card {
     position: relative;
@@ -40,7 +40,7 @@
         border: 0.5px solid $silver;
         position: absolute;
         content: "";
-        width: 100%;
+        width: 75%;
         height: 0;
         top: 20px; 
         margin-left: -5px;

@@ -1,18 +1,20 @@
+@import '../../../../assets/styles/variables';
+
 .main-container {
-    background: #CCCCCC;
+    background: $White-Smoke;
     padding: 69px 0px;
 }
 
 .details-container {
     margin: 0 auto;
-    background: #CCCCCC;
+    background: $White-Smoke;
     width: 1170px;
 }
 
 .left-pane {
     display: inline-block;
     margin-right: 30px;
-    background: white;
+    background: $white;
     width: 770px;
     height: 1937px;
 }
@@ -21,7 +23,7 @@
     display: inline-block;
     width: 370px;
     padding: 20px;
-    background: white;
+    background: $white;
     float: right;
     height: 1937px;
 }
@@ -55,14 +57,14 @@ span.carousel-control-next-icon {
     width: 30px;
     height: 40px;
     opacity: 0.8;
-    background-color: #303030;
+    background-color: $night-rider;
 }
 
 span.carousel-control-prev-icon:hover,
 span.carousel-control-next-icon:hover,
 span.carousel-control-prev-icon:focus,
 span.carousel-control-next-icon:focus {
-    background-color: #ed145b;
+    background-color: $ruby;
 
 }
 
@@ -76,12 +78,12 @@ span.carousel-control-next-icon:focus {
 }
 
 i {
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
 }
 
 .property-features {
     padding: 10px 0px;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid $gainsboro;
 }
 
 .property-short-desc {
@@ -92,7 +94,7 @@ label.label-area,
 label.label-bathrooms,
 label.label-bedrooms {
     margin-left: 10px;
-    font-family: Roboto;
+    font-family: 'Roboto-Light';
     font-size: 13px;
     font-weight: 300;
     font-style: normal;
@@ -100,7 +102,7 @@ label.label-bedrooms {
     line-height: 0.96;
     letter-spacing: normal;
     text-align: left;
-    color: #000000;
+    color: $black;
 }
 
 span.amenities {
@@ -108,7 +110,7 @@ span.amenities {
 }
 
 .prop-desc {
-    font-family: Roboto;
+    font-family: 'Roboto-Regular';
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
@@ -116,11 +118,11 @@ span.amenities {
     line-height: 1.44;
     letter-spacing: normal;
     text-align: left;
-    color: #6b6b6b;
+    color: $dim-gray;
 }
 
 .property-name {
-    font-family: Roboto;
+    font-family: 'Roboto-Bold';
     font-size: 18px;
     font-weight: bold;
     font-style: normal;
@@ -128,5 +130,5 @@ span.amenities {
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #000000;
+    color: $black;
 }

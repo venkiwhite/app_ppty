@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { SharedModule } from '../../shared/modules/shared/shared.module';
+
 
 
 import { DetailsRoutingModule } from './details-routing.module';
@@ -12,7 +14,8 @@ import { PropertyDetailsComponent } from './property-details/property-details.co
     CommonModule,
     DetailsRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ],
   declarations: [PropertyDetailsComponent]
 })

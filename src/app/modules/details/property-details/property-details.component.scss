@@ -90,7 +90,7 @@ span.carousel-control-next-icon:focus {
     width: auto
 }
 
-.item{
+.item {
     display: flex;
 }
 
@@ -152,4 +152,88 @@ span.amenities {
     letter-spacing: normal;
     text-align: left;
     color: $black;
+}
+
+table {
+    width: 100%;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    height: 205px;
+}
+
+.mat-header-cell.mat-sort-header-sorted {
+    color: black;
+}
+
+.mat-table {
+    overflow: hidden;
+}
+
+mat-header-row.mat-header-row,
+mat-row.mat-row {
+    height: 41px;
+    min-height: 41px;
+}
+
+mat-cell.mat-cell {
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.67;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+    border: none;
+}
+
+span.action-col {
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+    border-radius: 3px;
+    border: solid 0.7px $ruby;
+    background-color: #ffffff;
+    width: 81px;
+    height: 26px;
+    text-align: center;
+    line-height: 2;
+    color: $ruby
+}
+
+.property-amenities {
+    margin: 50px 0px;
+}
+
+.property-config-header {
+    margin: 20px 0px;
+}
+
+label.config-heading {
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.mat-header-cell {
+    color: rgba(0, 0, 0, 0.54);
+    background: $ruby;
+    font-family: 'Roboto-Bold';
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
 }

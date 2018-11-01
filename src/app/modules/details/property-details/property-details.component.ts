@@ -1,13 +1,13 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation, ViewChildren, QueryList } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 import { MatTableDataSource, MatSort } from '@angular/material';
 
-
 @Component({
   selector: 'app-property-details',
   templateUrl: './property-details.component.html',
-  styleUrls: ['./property-details.component.scss']
+  styleUrls: ['./property-details.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class PropertyDetailsComponent implements OnInit {
   enquiryForm: FormGroup;
@@ -20,6 +20,7 @@ export class PropertyDetailsComponent implements OnInit {
   ];
 
   @ViewChild(MatSort) sort: MatSort;
+  imgLoaded: Boolean;
   displayedColumns = ['UnitArea', 'Area', 'BasicPrice', 'Action'];
   dataSource = new MatTableDataSource(this.ELEMENT_DATA);
 
@@ -27,16 +28,94 @@ export class PropertyDetailsComponent implements OnInit {
   lng: number = 77.627106;
   markerIcon = "assets/images/hexagonal.png";
 
-  constructor(private fb: FormBuilder) { }
+  previewLargeImage;
+  sliderMedia;
+  isLastThumbnail: Boolean;
+  slideImageHTML;
+  constructor(private fb: FormBuilder) {
+    this.sliderMedia = [];
+    this.isLastThumbnail = false;
+    this.imgLoaded = false;
+    this.slideImageHTML = '';
+  }
 
   ngOnInit() {
 
+    this.previewLargeImage = {};
     this.enquiryForm = this.fb.group({
       fullName: ['', Validators.required],
       email: ['', Validators.required],
       phoneNumber: ['', Validators.required],
       others: ['']
     })
+    this.sliderMedia = [
+      {
+        title: 'Slide 1',
+        thumnail: '/assets/images/slider/thumbnail/1.jpg',
+        largeMediaPath: '/assets/images/slider/large_images/1.jpeg',
+        largeMediaType: 'image'
+      },
+      {
+        title: 'Slide 2',
+        thumnail: '/assets/images/slider/thumbnail/2.jpg',
+        largeMediaPath: '/assets/images/slider/large_images/2.jpeg',
+        largeMediaType: 'image'
+      },
+      {
+        title: 'Slide 3',
+        thumnail: '/assets/images/slider/thumbnail/3.jpg',
+        largeMediaPath: '/assets/images/slider/large_images/3.jpeg',
+        largeMediaType: 'image'
+      },
+      {
+        title: 'Slide 4',
+        thumnail: '/assets/images/slider/thumbnail/4.jpg',
+        largeMediaPath: '/assets/images/slider/videos/1.mp4',
+        largeMediaType: 'video'
+      },
+      {
+        title: 'Slide 5',
+        thumnail: '/assets/images/slider/thumbnail/5.jpg',
+        largeMediaPath: '/assets/images/slider/videos/1.mp4',
+        largeMediaType: 'video'
+      },
+      {
+        title: 'Slide 6',
+        thumnail: '/assets/images/slider/thumbnail/6.jpg',
+        largeMediaPath: '/assets/images/slider/large_images/1.jpeg',
+        largeMediaType: 'image'
+      },
+      {
+        title: 'Slide 7',
+        thumnail: '/assets/images/slider/thumbnail/7.jpg',
+        largeMediaPath: '/assets/images/slider/large_images/3.jpeg',
+        largeMediaType: 'image'
+      },
+      {
+        title: 'Slide 8',
+        thumnail: '/assets/images/slider/thumbnail/8.jpg',
+        largeMediaPath: '/assets/images/slider/videos/1.mp4',
+        largeMediaType: 'video'
+      },
+      {
+        title: 'Slide 9',
+        thumnail: '/assets/images/slider/thumbnail/9.jpg',
+        largeMediaPath: '/assets/images/slider/large_images/2.jpeg',
+        largeMediaType: 'image'
+      }
+
+    ]
+
+    this.previewLargeImage = this.sliderMedia[0];
+    setTimeout(() => {
+      this.isLastThumbnail = true;
+    }, 1000 * 5)
+
+    this.imgLoaded = true;
+
+    this.sliderMedia.forEach(element => {
+      this.slideImageHTML += `<img drag-scroll-item src="/assets/images/2.jpg"  (click)="previewLarge('assets/images/2.jpg')"/>`
+    });
   }
 
   ngAfterViewInit() {
@@ -57,9 +136,8 @@ export class PropertyDetailsComponent implements OnInit {
 
   }
 
-
-
-
-
+  previewLarge(img) {
+    this.previewLargeImage = img;
+  }
 
 }

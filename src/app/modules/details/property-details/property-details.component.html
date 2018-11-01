@@ -6,7 +6,7 @@
 
       <div class="left-pane">
 
-        <div class="gallery-area">
+        <!-- <div class="gallery-area">
 
           <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
 
@@ -17,7 +17,7 @@
               </div>
               <div class="carousel-item">
                 <video width="770" height="481" src="assets/videos/sampleVideo.mp4" controls></video>
-                <!-- <img class="d-block w-100" src="assets/images/pexels-photo-106399.jpeg" alt="Second slide"> -->
+                <-- <img class="d-block w-100" src="assets/images/pexels-photo-106399.jpeg" alt="Second slide"> --
               </div>
               <div class="carousel-item">
                 <img class="d-block gallery-preview " src="assets/images/pexels-photo-106399.jpeg" alt="Third slide">
@@ -104,6 +104,48 @@
 
           </div>
 
+        </div>
+      -->
+        <!--<div>
+          <app-image-slider></app-image-slider>
+          <div style="width:1200px; margin: auto;"><img src='{{previewLargeImage}}' style="width:700px; height:350px" /></div>
+          <drag-scroll #nav *ngIf="slideImageHTML">
+               <app-image-slider></app-image-slider> -->
+        <!-- <img drag-scroll-item src="/assets/images/1.jpg" (click)="previewLarge('assets/images/1.jpg')"/>
+    <img drag-scroll-item src="/assets/images/2.jpg"  (click)="previewLarge('assets/images/2.jpg')"/>
+    <img drag-scroll-item src="/assets/images/3.jpg" />
+    <img drag-scroll-item src="/assets/images/4.jpg" />
+    <img drag-scroll-item src="/assets/images/5.jpg" />
+    <img drag-scroll-item src="/assets/images/6.jpg" />
+    <img drag-scroll-item src="/assets/images/7.jpg" />
+    <img drag-scroll-item src="/assets/images/8.jpg" />  
+            
+          </drag-scroll>
+          <button (click)="moveLeft()" >Left</button>
+          <button (click)="moveRight()" >Right</button>
+
+        </div>
+      -->
+        <div>
+
+          <div class="ply-carousel-preview">
+
+            <img src='{{previewLargeImage.largeMediaPath}}' *ngIf="previewLargeImage.largeMediaType=='image'" />
+
+            <video controls *ngIf="previewLargeImage.largeMediaType=='video'">
+              <source src="{{previewLargeImage.largeMediaPath}}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <owl-carousel [options]="{items: 3, dots: false, navigation: true, nav: true}" [items]="sliderMedia"
+            [carouselClasses]="['owl-theme', 'row', 'sliding']">
+            <div class="item" *ngFor="let image of sliderMedia;let i = index">
+              <div class="thumbnail-image">
+                <img drag-scroll-item src="{{image.thumnail}}" (click)="previewLarge(image)" />
+              </div>
+            </div>
+          </owl-carousel>
         </div>
 
         <div class="property-desc">

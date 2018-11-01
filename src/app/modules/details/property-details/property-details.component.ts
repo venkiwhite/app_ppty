@@ -23,6 +23,10 @@ export class PropertyDetailsComponent implements OnInit {
   displayedColumns = ['UnitArea', 'Area', 'BasicPrice', 'Action'];
   dataSource = new MatTableDataSource(this.ELEMENT_DATA);
 
+  lat: number = 12.927923;
+  lng: number = 77.627106;
+  markerIcon = "assets/images/hexagonal.png";
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {

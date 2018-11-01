@@ -208,6 +208,22 @@ span.action-col {
     margin: 50px 0px;
 }
 
+.loc-area-heading-label {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+agm-map {
+    height: 300px;
+}
+
 .property-config-header {
     margin: 20px 0px;
 }
@@ -236,4 +252,8 @@ label.config-heading {
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
+}
+
+.loc-area {
+    margin: 30px 0px;
 }

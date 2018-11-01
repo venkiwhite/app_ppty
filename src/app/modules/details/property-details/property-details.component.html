@@ -182,13 +182,29 @@
                 <!-- Symbol Column -->
                 <ng-container matColumnDef="Action">
                   <mat-header-cell *matHeaderCellDef mat-sort-header> Action </mat-header-cell>
-                  <mat-cell *matCellDef="let element"><span class="action-col"> {{element.Action}} </span></mat-cell>
+                  <mat-cell *matCellDef="let element"><span class="action-col"> {{element.Action}} </span>
+                  </mat-cell>
                 </ng-container>
 
                 <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
                 <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
               </mat-table>
             </div>
+
+          </div>
+
+          <div class="loc-area">
+
+            <div class="loc-area-heading">
+              <label class="loc-area-heading-label">Property Location</label>
+            </div>
+
+            <div class="maps-area">
+              <agm-map [latitude]="lat" [longitude]="lng">
+                <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="markerIcon"></agm-marker>
+              </agm-map>
+            </div>
+
 
           </div>
 

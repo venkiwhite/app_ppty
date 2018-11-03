@@ -8,12 +8,19 @@
         [max]="2"
         [min]="0"
         [step]="1"
-        [vertical]="true">
+        [vertical]="true"
+        [value]="selectedMode.sliderValue"
+        (change)="onModeChange($event)">
     </mat-slider>
     </div>
+    <div class="slider slider-description">
+      <span [ngClass]="{'selected-mode' : selectedMode.displayValue==='rent'}" (click)="setSelectedMode(2,'rent')">rent</span>
+      <span [ngClass]="{'selected-mode' : selectedMode.displayValue==='any'}" (click)="setSelectedMode(1, 'any')">any</span>
+      <span [ngClass]="{'selected-mode' : selectedMode.displayValue==='buy'}" (click)="setSelectedMode(0, 'buy')">buy</span>
+    </div>
     <div class="search-form">
-      <form>
-        <mat-form-field>
+      <!-- <form>
+        <mat-form-field floatPlaceholder="never">
           <input type="text" placeholder="any" aria-label="locality" matInput [formControl]="locality" [matAutocomplete]="auto">
           <mat-autocomplete #auto="matAutocomplete">
             <mat-option *ngFor="let option of filteredLocality | async" [value]="option">
@@ -21,6 +28,33 @@
             </mat-option>
           </mat-autocomplete>
         </mat-form-field>
+      </form> -->
+      <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+        <div class="form-group locality">
+          <label for="locality">Locality</label>
+          <input class="form-control" id="locality" placeholder="any" formControlName="locality">
+        </div>
+        <div class="form-group min-price">
+          <label for="minPrice">min price</label>
+          <input class="form-control" id="minPrice" placeholder="any" formControlName="minPrice">
+        </div>
+        <div class="form-group max-price">
+          <label for="maxPrice">max price</label>
+          <input class="form-control" id="maxPrice" placeholder="any" formControlName="maxPrice">
+        </div>
+        <div class="form-group bhk">
+          <label for="bhk">BHK</label>
+          <input class="form-control" id="bhk" placeholder="any" formControlName="bhk">
+        </div>
+        <div class="form-group property-type">
+          <label for="propertyType">Property Type</label>
+          <input class="form-control" id="propertyType" placeholder="any" formControlName="propertyType">
+        </div>
+        <div class="form-group status">
+          <label for="status">Status</label>
+          <input class="form-control" id="status" placeholder="any" formControlName="status">
+        </div>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!searchForm.valid">Submit</button>
       </form>
     </div>
   </div>

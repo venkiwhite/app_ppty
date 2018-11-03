@@ -11,6 +11,9 @@ export class HomeLayoutComponent implements OnInit {
   trendingProjects: ProjectGroup;
   featuredProjects: ProjectGroup;
 
+  displaySearchPage = false ;
+  searchResults;
+
   constructor(private dataServiceService: DataServiceService) {
   }
 
@@ -24,6 +27,17 @@ export class HomeLayoutComponent implements OnInit {
     });
     this.dataServiceService.getProjects('featured').subscribe( (response) => {
       this.featuredProjects = new ProjectGroup('Featured Projects', response.data, response.page);
+    });
+  }
+
+  onSearch(event) {
+    this.displaySearchPage = event.flag;
+    this.showSearchResults(event.value);
+  }
+
+  showSearchResults(value) {
+    this.dataServiceService.getSearchResults(value).subscribe( (response) => {
+      this.searchResults = response;
     });
   }
 

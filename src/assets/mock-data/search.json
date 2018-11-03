@@ -1,0 +1,113 @@
+{
+    "page": { "currentPage": 1, "maxValue": 100},
+    "data": [
+                {
+                    "id": "1",
+                    "title": "Brigade Orchards Villa",
+                    "sqft": "540 - 1600 Sq Ft",
+                    "rooms": "1,2 & 3 BHK",
+                    "location": "Tarmani, Chennai",
+                    "image": "thumb2.jpg",
+                    "buildingType": "home",
+                    "featured": true,
+                    "status": "Ongoing",
+                    "ratePerSqft": "47 Lakhs - 1.6 Crore"
+                },
+                {
+                    "id": "2",
+                    "title": "Arvind Skylands",
+                    "sqft": "1100 - 1700 Sq Ft",
+                    "rooms": "3 & 4 BHK",
+                    "location": "Tambaram, Chennai",
+                    "image": "thumb1.jpg",
+                    "buildingType": "apartment",
+                    "featured": false,
+                    "status": "Completed",
+                    "ratePerSqft": "45 Lakhs - 97 Lakhs"
+                },
+                {
+                    "id": "3",
+                    "title": "Salarpuria Sattva East crest",
+                    "sqft": "900 - 1400 Sq Ft",
+                    "rooms": "2,2+Study & 3 BHK",
+                    "location": "JP Nagar, Bangalore",
+                    "image": "thumb4.jpg",
+                    "buildingType": "apartment",
+                    "featured": false,
+                    "status": "Ongoing",
+                    "ratePerSqft": "58 Lakhs - 76 Lakhs"
+                },
+                {
+                    "id": "4",
+                    "title": "Gopalan Lake Front",
+                    "sqft": "1100 - 1700 Sq Ft",
+                    "rooms": "1,2 & 3 BHK",
+                    "location": "Tambaram, Chennai",
+                    "image": "thumb3.jpg",
+                    "buildingType": "apartment",
+                    "featured": false,
+                    "status": "Ready to Move",
+                    "ratePerSqft": "58 Lakhs - 1.6 Crore"
+                },
+                {
+                    "id": "5",
+                    "title": "Mahaveer Ranches",
+                    "sqft": "900 - 1400 Sq Ft",
+                    "rooms": "3 & 4 BHK",
+                    "location": "Tambaram, Chennai",
+                    "image": "thumb4.jpg",
+                    "buildingType": "apartment",
+                    "featured": true,
+                    "status": "Ongoing",
+                    "ratePerSqft": "58 Lakhs - 1.6 Crore"
+                },
+                {
+                    "id": "6",
+                    "title": "Assets East Point",
+                    "sqft": "540 - 1600 Sq Ft",
+                    "rooms": "2,2+Study & 3 BHK",
+                    "location": "Tambaram, Chennai",
+                    "image": "thumb5.jpg",
+                    "buildingType": "home",
+                    "featured": false,
+                    "status": "Ongoing",
+                    "ratePerSqft": "58 Lakhs - 1.6 Crore"
+                },
+                {
+                    "id": "1",
+                    "title": "Brigade Orchards Villa",
+                    "sqft": "540 - 1600 Sq Ft",
+                    "rooms": "1,2 & 3 BHK",
+                    "location": "Tarmani, Chennai",
+                    "image": "thumb2.jpg",
+                    "buildingType": "home",
+                    "featured": true,
+                    "status": "Ongoing",
+                    "ratePerSqft": "47 Lakhs - 1.6 Crore"
+                },
+                {
+                    "id": "2",
+                    "title": "Arvind Skylands",
+                    "sqft": "1100 - 1700 Sq Ft",
+                    "rooms": "3 & 4 BHK",
+                    "location": "Tambaram, Chennai",
+                    "image": "thumb1.jpg",
+                    "buildingType": "apartment",
+                    "featured": false,
+                    "status": "Completed",
+                    "ratePerSqft": "45 Lakhs - 97 Lakhs"
+                },
+                {
+                    "id": "3",
+                    "title": "Salarpuria Sattva East crest",
+                    "sqft": "900 - 1400 Sq Ft",
+                    "rooms": "2,2+Study & 3 BHK",
+                    "location": "JP Nagar, Bangalore",
+                    "image": "thumb4.jpg",
+                    "buildingType": "apartment",
+                    "featured": false,
+                    "status": "Ongoing",
+                    "ratePerSqft": "58 Lakhs - 76 Lakhs"
+                }
+            ]
+    }

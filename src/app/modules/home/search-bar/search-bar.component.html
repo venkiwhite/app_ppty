@@ -29,7 +29,7 @@
           </mat-autocomplete>
         </mat-form-field>
       </form> -->
-      <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="searchForm">
         <div class="form-group locality">
           <label for="locality">Locality</label>
           <input class="form-control" id="locality" placeholder="any" formControlName="locality">
@@ -54,7 +54,8 @@
           <label for="status">Status</label>
           <input class="form-control" id="status" placeholder="any" formControlName="status">
         </div>
-        <button mat-raised-button color="primary" type="submit" [disabled]="!searchForm.valid">Submit</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!searchForm.valid" (click)="onSubmit()">Submit</button>
+        <button mat-raised-button color="accent" (click)="onClear()">Clear</button>
       </form>
     </div>
   </div>

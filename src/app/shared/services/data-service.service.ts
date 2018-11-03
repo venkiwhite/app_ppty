@@ -25,6 +25,11 @@ export class DataServiceService {
     return this.storedResponse.projectList;
   }
 
+  getSearchResults(searchParameters) {
+    const url = this.configUrs.api.search;
+    return this.http.get(url);
+  }
+
 }
 
 class StoredResponse {

@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Observable } from 'rxjs';
-import { map, startWith } from 'rxjs/operators';
 
 @Component({
   selector: 'app-search-bar',
@@ -9,6 +7,8 @@ import { map, startWith } from 'rxjs/operators';
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
+
+  @Output() searchParameters = new EventEmitter();
 
   selectedMode = {
     sliderValue: 0,
@@ -24,29 +24,18 @@ export class SearchBarComponent implements OnInit {
     status: new FormControl(''),
   });
 
-  // locality = new FormControl();
-  // options: string[] = ['Locality One', 'Locality Two', 'Locality Three'];
-  // filteredLocality: Observable<string[]>;
-
   constructor() { }
 
   ngOnInit() {
-    // this.filteredLocality = this.locality.valueChanges
-    //   .pipe(
-    //     startWith(''),
-    //     map(value => this._filter(value))
-    //   );
   }
 
-  // private _filter(value: string): string[] {
-  //   const filterValue = value.toLowerCase();
-
-  //   return this.options.filter(option => option.toLowerCase().includes(filterValue));
-  // }
-
   onSubmit() {
-    // TODO: Use EventEmitter with form value
-    console.log(this.searchForm.value);
+    this.searchParameters.emit({ flag: true, value: this.searchForm.value });
+  }
+
+  onClear() {
+    this.searchForm.reset();
+    this.searchParameters.emit({ flag: false, value: null });
   }
 
   onModeChange(event) {

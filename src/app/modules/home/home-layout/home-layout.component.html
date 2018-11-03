@@ -1,5 +1,5 @@
-<app-search-bar></app-search-bar>
-<div class="ply-container">
+<app-search-bar (searchParameters)="onSearch($event)"></app-search-bar>
+<div class="ply-container" *ngIf="!displaySearchPage">
   <app-project-group *ngIf="trendingProjects" [inputData]="trendingProjects"></app-project-group>
   <app-project-group *ngIf="featuredProjects" [inputData]="featuredProjects"></app-project-group>
   <app-project-tab></app-project-tab>
@@ -7,6 +7,6 @@
   
 </div>
 
-<div class="ply-container">
-  <app-search-page></app-search-page>  
+<div class="ply-container" *ngIf="displaySearchPage && searchResults">
+  <app-search-page [inputData]="searchResults"></app-search-page>  
 </div>

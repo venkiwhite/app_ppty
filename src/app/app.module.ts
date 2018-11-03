@@ -19,6 +19,7 @@ import { BannerWindowComponent } from './shared/components/banner/banner-window/
 // Services
 import { DataServiceService } from './shared/services/data-service.service';
 import { OverlayMenuComponent } from './core/overlay-menu/overlay-menu.component';
+// import { ModalPopupComponent } from './shared/components/modal-popup/modal-popup.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { OverlayMenuComponent } from './core/overlay-menu/overlay-menu.component
     BannerMenuComponent,
     BannerWindowComponent,
     OverlayMenuComponent
+    // ModalPopupComponent
   ],
   imports: [
     SharedModule,

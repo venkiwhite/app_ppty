@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+
 
 //Custom Modules
 import { SharedModule } from '../../shared/modules/shared/shared.module';
@@ -11,20 +11,19 @@ import { PropertyDetailsComponent } from './property-details/property-details.co
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 
 import { OwlModule } from 'ngx-owl-carousel';
+import { SimilarPropertyComponent } from './property-details/similar-property/similar-property.component';
 
 
 @NgModule({
   imports: [
     CommonModule,
     DetailsRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
     SharedModule,
     OwlModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDtdYPAH703QXocVx3QFpeMVsxkOX0uJnU'
     })
   ],
-  declarations: [PropertyDetailsComponent, ImageSliderComponent]
+  declarations: [PropertyDetailsComponent, ImageSliderComponent, SimilarPropertyComponent]
 })
 export class DetailsModule { }

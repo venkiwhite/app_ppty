@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation, ViewChildren, QueryList } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 import { MatTableDataSource, MatSort } from '@angular/material';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+
+import { ModalPopupComponent } from '../../../shared/components/modal-popup/modal-popup.component';
 
 @Component({
   selector: 'app-property-details',
@@ -10,7 +12,6 @@ import { MatTableDataSource, MatSort } from '@angular/material';
   encapsulation: ViewEncapsulation.None
 })
 export class PropertyDetailsComponent implements OnInit {
-  enquiryForm: FormGroup;
 
   ELEMENT_DATA = [
     { UnitArea: '2BHK', Area: '740 Sq ft', BasicPrice: '47 Lakhs', Action: 'Enquire Now' },
@@ -32,7 +33,7 @@ export class PropertyDetailsComponent implements OnInit {
   sliderMedia;
   isLastThumbnail: Boolean;
   slideImageHTML;
-  constructor(private fb: FormBuilder) {
+  constructor(public dialog: MatDialog) {
     this.sliderMedia = [];
     this.isLastThumbnail = false;
     this.imgLoaded = false;
@@ -42,12 +43,7 @@ export class PropertyDetailsComponent implements OnInit {
   ngOnInit() {
 
     this.previewLargeImage = {};
-    this.enquiryForm = this.fb.group({
-      fullName: ['', Validators.required],
-      email: ['', Validators.required],
-      phoneNumber: ['', Validators.required],
-      others: ['']
-    })
+
     this.sliderMedia = [
       {
         title: 'Slide 1',
@@ -122,22 +118,27 @@ export class PropertyDetailsComponent implements OnInit {
     this.dataSource.sort = this.sort;
   }
 
-  get eForm() {
-    return this.enquiryForm.controls;
-  }
 
-  onSubmit() {
 
-    if (this.enquiryForm.invalid) {
-      return false;
-    } else {
-      return true;
-    }
-
-  }
 
   previewLarge(img) {
     this.previewLargeImage = img;
   }
 
+  // showEnquiryForm(data) {
+  //   console.log(data);
+  // }
+
+  openEnquiryFormDialog(data): void {
+    const dialogRef = this.dialog.open(ModalPopupComponent, {
+      width: '370px',
+      height: '589px',
+      panelClass: 'enquiryFormContainer',
+      data: data
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
 }

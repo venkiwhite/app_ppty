@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 // Material
 import { MatButtonModule, MatCheckboxModule, MatTabsModule } from '@angular/material';
@@ -11,19 +12,27 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table'
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { PaginationComponent } from './../../components/pagination/pagination.component';
+import { ModalPopupComponent } from './../../components/modal-popup/modal-popup.component';
+
 
 @NgModule({
   imports: [
-    CommonModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule
-    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule, MatTabsModule, MatTableModule
+    CommonModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule,
+    MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule, MatTabsModule,
+    MatTableModule, MatDialogModule, FormsModule, ReactiveFormsModule
   ],
-  declarations: [PaginationComponent],
+  declarations: [PaginationComponent, ModalPopupComponent],
   exports: [
-    MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule
-    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule,
-    PaginationComponent, MatTabsModule, MatTableModule
-  ]
+    MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule,
+    MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule,
+    MatTabsModule, MatTableModule, MatDialogModule, PaginationComponent, ModalPopupComponent,
+    FormsModule, ReactiveFormsModule
+  ],
+  entryComponents: [
+    ModalPopupComponent
+  ],
 })
 export class SharedModule { }

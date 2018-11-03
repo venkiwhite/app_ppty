@@ -1,0 +1,94 @@
+@import '../../../../assets/styles/variables';
+
+
+
+.enquiryFormContainer .mat-dialog-container {
+    padding: 0;
+}
+
+.enquiry-form {
+    padding: 0 40px 0 29px;
+}
+
+label.full-name,
+.mail-id,
+.phone-number {
+    display: block;
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black;
+}
+
+span.optional {
+    font-size: 12px;
+    font-family: 'Roboto-Light';
+}
+
+.other-req,
+.site-visit {
+    display: inline-block;
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black;
+}
+
+label.site-visit {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+// .fa-shuttle-van:before{
+//     content: "\f5b6";
+// }
+
+input[type=checkbox].fullname-input {
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    background-color: $ruby;
+}
+
+button.enquiry-form-submit {
+    width: 148px;
+    height: 46px;
+    background-color: $ruby;
+    border: none;
+    border-radius: 3px;
+    color: $white;
+}
+
+.enquiry-form-header {
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black;
+}
+
+.enquiry-form-header-subtext {
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black;
+}

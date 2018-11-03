@@ -1,0 +1,15 @@
+<div class="simi-list-container">
+  <header class="sim-listings-head">Similar Listings</header>
+
+  <div class="listings" *ngFor="let list of simListings">
+
+    <div class="listing-image">
+      <img class="list-img" src="{{list.img}}">
+    </div>
+    <div class="listing-detais">
+      <label class="list-label">{{list.details}}</label>
+    </div>
+    
+  </div>
+
+</div>

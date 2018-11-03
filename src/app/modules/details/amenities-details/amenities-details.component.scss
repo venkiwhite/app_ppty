@@ -1,0 +1,20 @@
+.ply-amenities-details {
+    .ply-amenities-box {
+        display: inline-block;
+        padding-right: 30px;
+        &:last-child {
+            padding-right: 0;
+        }
+        .ply-amenity-icon {
+            /* width: 40px;
+            height: 60px;
+            */
+            margin: 0 auto;
+        }
+        .ply-amenity-title {
+            font-size: 11px;
+            text-align: center;
+            margin-top: 5px;
+        }
+    }
+}

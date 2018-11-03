@@ -1,0 +1,41 @@
+@import './variables';
+
+.ply-icon-trans {
+    margin: 0 auto;
+}
+.ply-icon-prev-trans {
+    background: $sprite-trans;
+    background-position: -175px 0px;
+}
+
+.ply-icon-next-trans {
+    background: $sprite-trans;
+    background-position: -202px 0px;
+}
+
+.ply-icon-swimming-pool-trans {
+    background: $sprite-trans;
+    background-position: -8px -99px;
+    width: 40px;
+    height: 34px;
+}
+
+.ply-icon-gym-trans {
+    background: $sprite-trans;
+    background-position: -68px -99px;
+    width: 40px;
+    height: 34px;
+}
+.ply-icon-security-trans {
+    background: $sprite-trans;
+    background-position: -125px -99px;
+    width: 40px;
+    height: 34px;
+}
+
+.ply-icon-lift-trans {
+    background: $sprite-trans;
+    background-position: -177px -99px;
+    width: 50px;
+    height: 34px;
+}

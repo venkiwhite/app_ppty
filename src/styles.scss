@@ -9,6 +9,19 @@
 * {
   font-family: 'Roboto';
 }
+button, input[type=text] {
+  outline: none !important;
+}
+button {
+  cursor: pointer;
+}
+.ply-title-medium {
+  font-size: 20px;
+  font-family: 'Roboto-Light';
+}
+.ply-title-box {
+  padding-bottom: 20px;
+}
 
 @font-face {
   font-family: 'Roboto-Regular';

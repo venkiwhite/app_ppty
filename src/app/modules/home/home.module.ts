@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 // Custom Modules
 import { SharedModule } from './../../shared/modules/shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
@@ -16,7 +18,7 @@ import { ProjectTabComponent } from './project-tab/project-tab.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SharedModule
+    SharedModule, FormsModule, ReactiveFormsModule
   ],
   declarations: [HomeLayoutComponent, SearchBarComponent,
     SearchPageComponent, ProjectGroupComponent, ReviewCardComponent, ProjectCardComponent, TitleCardComponent, ProjectTabComponent]

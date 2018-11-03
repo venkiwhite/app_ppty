@@ -11,19 +11,22 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table'
-
+import { MatSliderModule } from '@angular/material/slider';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import {MatInputModule} from '@angular/material/input';
 import { PaginationComponent } from './../../components/pagination/pagination.component';
 
 @NgModule({
   imports: [
     CommonModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule
-    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule, MatTabsModule, MatTableModule
+    , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule, MatTabsModule, MatTableModule,
+    MatSliderModule, MatAutocompleteModule, MatInputModule
   ],
   declarations: [PaginationComponent],
   exports: [
     MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule
     , MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule,
-    PaginationComponent, MatTabsModule, MatTableModule
+    PaginationComponent, MatTabsModule, MatTableModule, MatSliderModule, MatAutocompleteModule, MatInputModule
   ]
 })
 export class SharedModule { }

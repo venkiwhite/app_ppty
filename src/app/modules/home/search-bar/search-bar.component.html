@@ -1,3 +1,27 @@
-<p>
-  search-bar works!
-</p>
+<div class="search-bar">
+  <div class="ply-container">
+    <div class="slider">
+      <mat-slider
+        class="slider-margin"
+        color="primary"
+        [invert]="false"
+        [max]="2"
+        [min]="0"
+        [step]="1"
+        [vertical]="true">
+    </mat-slider>
+    </div>
+    <div class="search-form">
+      <form>
+        <mat-form-field>
+          <input type="text" placeholder="any" aria-label="locality" matInput [formControl]="locality" [matAutocomplete]="auto">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredLocality | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+    </div>
+  </div>
+</div>

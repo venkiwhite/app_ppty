@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { BannerServiceService } from './../../../services/banner-services/banner-service.service';
 import { PaginationInputData } from 'src/app/core/models/models';
 
@@ -12,7 +13,7 @@ export class BannerWindowComponent implements OnInit {
   projectList;
   paginationData: PaginationInputData;
 
-  constructor(private bannerServiceService: BannerServiceService) { }
+  constructor(private bannerServiceService: BannerServiceService, private router: Router) { }
 
   ngOnInit() {
     this.getBannerWindowProjects(1);
@@ -43,5 +44,9 @@ export class BannerWindowComponent implements OnInit {
       currentPage: page.currentPage,
       maxValue: page.maxValue
     };
+  }
+
+  getDetails() {
+    this.router.navigate(['/details']);
   }
 }

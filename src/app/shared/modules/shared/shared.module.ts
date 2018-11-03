@@ -32,7 +32,7 @@ import { ModalPopupComponent } from './../../components/modal-popup/modal-popup.
     MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSelectModule,
     MatMenuModule, MatIconModule, MatCardModule, MatDividerModule, MatListModule,
     MatTabsModule, MatTableModule, MatDialogModule, PaginationComponent, ModalPopupComponent,
-    FormsModule, ReactiveFormsModule, , MatSliderModule, MatAutocompleteModule, MatInputModule
+    FormsModule, ReactiveFormsModule, MatSliderModule, MatAutocompleteModule, MatInputModule
   ],
   entryComponents: [
     ModalPopupComponent

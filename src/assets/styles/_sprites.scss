@@ -113,3 +113,24 @@
     width: 42px;
     height: 42px;
 }
+
+.ply-icon-area-unit-trans {
+    background: $sprite-trans;
+    width: 30px;
+    height: 30px;
+    background-position: -113px 0px;
+}
+
+.ply-icon-bedroom-trans {
+    background: $sprite-trans;
+    width: 30px;
+    height: 30px;
+    background-position: -143px 0px;
+}
+
+.ply-icon-bathroom-trans {
+    background: $sprite-trans;
+    background-position: -203px -32px;
+    width: 24px;
+    height: 20px;
+}

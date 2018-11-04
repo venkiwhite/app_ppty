@@ -25,8 +25,7 @@ export class AmenitiesDetailsComponent implements OnInit {
     ]
   }
 
-  amenityStyle(title) {
+  getStyle(title) {
     return 'ply-icon-' + title.replace(/ /g,'-').toLowerCase() + '-trans';
-
   }
 }

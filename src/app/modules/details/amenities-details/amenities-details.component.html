@@ -1,7 +1,7 @@
 <div class="ply-amenities-details">
   <div class="ply-title-medium ply-title-box">Amenities</div>
   <div class="ply-amenities-box" *ngFor="let item of amenities">
-    <div class="ply-amenity-icon" [ngClass]="amenityStyle(item.title)"></div>
+    <div class="ply-amenity-icon" [ngClass]="getStyle(item.title)"></div>
     <div class="ply-amenity-title">{{item.title}}</div>
   </div>
 </div>

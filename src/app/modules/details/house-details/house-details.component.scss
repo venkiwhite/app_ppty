@@ -1,0 +1,32 @@
+@import './../../../../assets/styles/variables';
+@import './../../../../assets/styles/sprites';
+.ply-inline-icon-text {
+    padding-left: 40px;
+    position: relative;
+    display: inline-block;
+    width: 135px;
+    padding-bottom: 5px;
+    &:before {
+        position: absolute;
+        content: "";
+        left: 10px;
+        top: -2px;
+    }
+    &.ply-icon-custom-unit-area {
+        &:before {
+            @extend .ply-icon-area-unit-trans;
+        }
+    }
+    &.ply-icon-custom-bathroom {
+        &:before {
+            @extend .ply-icon-bathroom-trans;
+            left: 18px;
+            top: 0px;
+        }
+    }
+    &.ply-icon-custom-bedroom {
+        &:before {
+            @extend .ply-icon-bedroom-trans;
+        }
+    }
+}

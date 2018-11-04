@@ -1,0 +1,6 @@
+
+<div *ngFor="let details of house_detils">
+  <div class="ply-inline-icon-text" [ngClass]="getStyle(item.category)" *ngFor="let item of details.details">
+    {{item.title}}
+  </div>
+</div>

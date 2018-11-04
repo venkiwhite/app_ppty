@@ -8,12 +8,12 @@ import { DataServiceService } from './../../../shared/services/data-service.serv
 const BHK_UNITS_DATA: Bhk_units   [] = [
   {
     id: "123",
-    name: "Lift",
+    name: "Lift 1 ",
     description: "Lift facilities"
   },
   {
     id: "456",
-    name: "Swimming pool",
+    name: "Swimming pool 1",
     description: "Swimming pool facilities"
   }
 ]

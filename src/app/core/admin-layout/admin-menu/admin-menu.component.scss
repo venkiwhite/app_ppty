@@ -1,0 +1,27 @@
+@import './../../../../assets/styles/variables';
+.banner-menu {
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.5);
+    .ply-container {
+        height: 85px;
+        text-align: right;
+    }
+}
+
+.banner-logo,
+.banner-menu-items {
+    display: inline-block;
+}
+
+.banner-menu-items {
+    font-size: 20px;
+    height: inherit;
+    button {
+        height: inherit;
+        color: $white
+    }
+}
+
+.menu-icon {
+    width: 100px;
+}

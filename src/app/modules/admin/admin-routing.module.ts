@@ -10,7 +10,8 @@ import { AdminSettingsComponent } from './admin-settings/admin-settings.componen
 const routes: Routes = [
   {
     path: '',
-    component: AdminComponent
+    // component: AdminComponent
+    component: AmenitiesComponent
   },
   {
     path: 'amenities',

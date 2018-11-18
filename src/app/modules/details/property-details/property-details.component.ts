@@ -48,26 +48,26 @@ export class PropertyDetailsComponent implements OnInit {
       {
         title: 'Slide 1',
         thumnail: '/assets/images/slider/thumbnail/1.jpg',
-        largeMediaPath: '/assets/images/slider/large_images/1.jpeg',
+        largeMediaPath: '/assets/images/slider/large_images/1.jpg',
         largeMediaType: 'image'
       },
       {
         title: 'Slide 2',
         thumnail: '/assets/images/slider/thumbnail/2.jpg',
-        largeMediaPath: '/assets/images/slider/large_images/2.jpeg',
+        largeMediaPath: '/assets/images/slider/large_images/2.jpg',
         largeMediaType: 'image'
       },
       {
         title: 'Slide 3',
         thumnail: '/assets/images/slider/thumbnail/3.jpg',
-        largeMediaPath: '/assets/images/slider/large_images/3.jpeg',
+        largeMediaPath: '/assets/images/slider/large_images/3.jpg',
         largeMediaType: 'image'
       },
       {
         title: 'Slide 4',
         thumnail: '/assets/images/slider/thumbnail/4.jpg',
-        largeMediaPath: '/assets/images/slider/videos/1.mp4',
-        largeMediaType: 'video'
+        largeMediaPath: '/assets/images/slider/large_images/4.jpg',
+        largeMediaType: 'image'
       },
       {
         title: 'Slide 5',
@@ -78,25 +78,25 @@ export class PropertyDetailsComponent implements OnInit {
       {
         title: 'Slide 6',
         thumnail: '/assets/images/slider/thumbnail/6.jpg',
-        largeMediaPath: '/assets/images/slider/large_images/1.jpeg',
+        largeMediaPath: '/assets/images/slider/large_images/6.jpg',
         largeMediaType: 'image'
       },
       {
         title: 'Slide 7',
         thumnail: '/assets/images/slider/thumbnail/7.jpg',
-        largeMediaPath: '/assets/images/slider/large_images/3.jpeg',
+        largeMediaPath: '/assets/images/slider/large_images/7.jpg',
         largeMediaType: 'image'
       },
       {
         title: 'Slide 8',
         thumnail: '/assets/images/slider/thumbnail/8.jpg',
-        largeMediaPath: '/assets/images/slider/videos/1.mp4',
-        largeMediaType: 'video'
+        largeMediaPath: '/assets/images/slider/large_images/8.jpg',
+        largeMediaType: 'image'
       },
       {
         title: 'Slide 9',
         thumnail: '/assets/images/slider/thumbnail/9.jpg',
-        largeMediaPath: '/assets/images/slider/large_images/2.jpeg',
+        largeMediaPath: '/assets/images/slider/large_images/9.jpg',
         largeMediaType: 'image'
       }
 

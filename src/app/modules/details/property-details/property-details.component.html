@@ -12,7 +12,7 @@
 
             <img src='{{previewLargeImage.largeMediaPath}}' *ngIf="previewLargeImage.largeMediaType=='image'" />
 
-            <video controls *ngIf="previewLargeImage.largeMediaType=='video'">
+            <video controls width="770" height="350" *ngIf="previewLargeImage.largeMediaType=='video'">
               <source src="{{previewLargeImage.largeMediaPath}}" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -140,7 +140,7 @@
 
       </div>
 
-      <div class="right-pane">        
+      <div class="right-pane">
 
         <app-similar-property></app-similar-property>
 

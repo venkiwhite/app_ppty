@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HouseDetailsComponent implements OnInit {
 
-  house_detils;
+  house_details;
   constructor() { }
 
   ngOnInit() {
 
-    this.house_detils = 
+    this.house_details = 
     [
       {
         "details" : [

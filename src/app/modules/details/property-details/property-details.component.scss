@@ -225,7 +225,7 @@ agm-map {
 }
 
 .property-config-header {
-    margin: 20px 0px;
+    margin: 16px 0px;
 }
 
 label.config-heading {
@@ -291,8 +291,9 @@ owl-carousel {
             position: absolute;
             top: 50px;
             background-color: $ruby !important;
-            width: 25px;
-            height: 50px;
+            width: 30px;
+            height: 40px;
+            opacity: 0.8;
             outline: none;
 
             &.disabled {
@@ -341,7 +342,11 @@ owl-carousel {
 
     >img,
     >video {
-        width: 500px;
-        height: 250px;
+        width: 770px;
+        height: 350px;
     }
+}
+
+video {
+    object-fit: fill;
 }

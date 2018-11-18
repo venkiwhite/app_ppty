@@ -1,13 +1,8 @@
 @import '../../../../assets/styles/variables';
 
 
-
-.enquiryFormContainer .mat-dialog-container {
-    padding: 0;
-}
-
 .enquiry-form {
-    padding: 0 40px 0 29px;
+    padding: 29px 40px 21px 29px;
 }
 
 label.full-name,
@@ -23,6 +18,7 @@ label.full-name,
     letter-spacing: normal;
     text-align: left;
     color: $black;
+    margin: 0;
 }
 
 span.optional {
@@ -42,6 +38,7 @@ span.optional {
     letter-spacing: normal;
     text-align: left;
     color: $black;
+    margin: 0;
 }
 
 label.site-visit {
@@ -91,4 +88,9 @@ button.enquiry-form-submit {
     letter-spacing: normal;
     text-align: left;
     color: $black;
+    // margin: 14px 0 35px 0;
+}
+
+.form-group {
+    margin-bottom: 0;
 }

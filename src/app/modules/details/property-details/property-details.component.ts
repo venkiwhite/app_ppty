@@ -132,7 +132,7 @@ export class PropertyDetailsComponent implements OnInit {
   openEnquiryFormDialog(data): void {
     const dialogRef = this.dialog.open(ModalPopupComponent, {
       width: '370px',
-      height: '589px',
+      // height: '589px',
       panelClass: 'enquiryFormContainer',
       data: data
     });

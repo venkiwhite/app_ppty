@@ -48,11 +48,13 @@ footer {
         height: 100%;
         background-color: $white-smoke;
         border-radius: 0;
+
         .mat-card-header .mat-card-title {
             font-weight: bold;
             font-size: 16px;
             margin-bottom: 6px;
         }
+
         .mat-card-header-text {
             margin: 0;
         }
@@ -74,4 +76,8 @@ footer {
 
 .mat-slider-vertical.slider-margin {
     min-height: 70px;
+}
+
+.enquiryFormContainer .mat-dialog-container {
+    padding: 0;
 }

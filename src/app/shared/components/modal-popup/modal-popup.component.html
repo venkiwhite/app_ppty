@@ -1,7 +1,7 @@
 <div class="enquiry-form">
 
   <div class="enquiry-form-header"> Enquiry </div>
-  <span class="enquiry-form-header-subtext"> Please fill-in the below form </span>
+  <div class="enquiry-form-header-subtext"> Please fill-in the below form </div>
 
   <form [formGroup]="enquiryForm">
 
@@ -34,6 +34,7 @@
 
   </form>
 
-</div>
+  <button class="enquiry-form-submit" (click)="onSubmitClick()">Submit</button>
 
-<button class="enquiry-form-submit" (click)="onSubmitClick()">Submit</button>
+
+</div>

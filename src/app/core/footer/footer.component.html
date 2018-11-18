@@ -10,15 +10,27 @@
             Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin lorem quis.
           </div>
         </div>
-        <div>
+        <div class="ply-recent-posts">
           <div class="ply-action-title">
             Recent Posts
           </div>
           <nav>
-            <a href="/#">About Pillarly</a>
-            <a href="/#">Our Partners </a>
-            <a href="/#">Interior Design Solutions</a>
-            <a href="/#">Terms & Conditions</a>
+            <div class="recent-posts-box">
+              <div class="ply-icon-arrow-fr-trans"></div>
+              <div><a href="/#" class="">About Pillarly</a></div>
+            </div>
+            <div class="recent-posts-box">
+              <div class="ply-icon-arrow-fr-trans"></div>
+              <div><a href="/#" class="">Our Partners</a></div>
+            </div>
+            <div class="recent-posts-box">
+              <div class="ply-icon-arrow-fr-trans"></div>
+              <div><a href="/#" class="">Interior Design Solutions</a></div>
+            </div>
+            <div class="recent-posts-box">
+              <div class="ply-icon-arrow-fr-trans"></div>
+              <div><a href="/#" class="">Terms & Conditions</a></div>
+            </div>
           </nav>
         </div>
         <div>
@@ -27,24 +39,24 @@
           </div>
           <nav class="ply-csupport">
             <div class="ply-inline-no-action">
-              <div class="ply-icon">
-                <img src="/assets/images/svg/icon-phone.svg" />
+              <div class="ply-icon ply-icon-phone-trans">
+                <!-- <img src="/assets/images/svg/icon-phone.svg" /> -->
               </div>
               <div class="ply-label">
                 930 1234 5679
               </div>
             </div>
             <div class="ply-inline-no-action">
-              <div class="ply-icon">
-                <img src="/assets/images/svg/icon-mail.svg" />
+              <div class="ply-icon ply-icon-email-trans">
+                <!-- <img src="/assets/images/svg/icon-mail.svg" /> -->
               </div>
               <div class="ply-label">
                 ontact@pillarly.com
               </div>
             </div>
             <div class="ply-inline-no-action">
-              <div class="ply-icon">
-                <img src="/assets/images/svg/icon-print.svg" />
+              <div class="ply-icon ply-icon-fax-trans">
+                <!-- <img src="/assets/images/svg/icon-print.svg" /> -->
               </div>
               <div class="ply-label">
                 1234 9930 1234 5679
@@ -63,29 +75,14 @@
             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
           </div>
           <div class="ply-inline-input-action">
-            <input type="text" /><button>Submit</button>
+            <input type="text" placeholder="e-mail" /><button>Submit</button>
           </div>
         </div>
       </div>
 
 
     </div>
-    <mat-toolbar color="primary">
-      <div class="ply-container">
-        <div class="ply-copyright">&copy;2018 Pillarly.com, All Rights Reserved</div>
-        <div class="ply-icon-gototop"><img src="/assets/images/svg/icon-gototop.svg" />
-        </div>
-
-        <ul class="ply-social-media">
-          <li><img src="/assets/images/svg/icon-google.svg" />
-          </li>
-          <li><img src="/assets/images/svg/icon-twitter.svg" />
-          </li>
-          <li><img src="/assets/images/svg/icon-linkedin.svg" />
-          </li>
-        </ul>
-      </div>
-    </mat-toolbar>
+    <app-copyright-panel></app-copyright-panel>
   </div>
 
 </footer>

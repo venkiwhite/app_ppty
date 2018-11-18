@@ -12,6 +12,8 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
 
 import { OwlModule } from 'ngx-owl-carousel';
 import { SimilarPropertyComponent } from './property-details/similar-property/similar-property.component';
+import { AmenitiesDetailsComponent } from './amenities-details/amenities-details.component';
+import { HouseDetailsComponent } from './house-details/house-details.component';
 
 
 @NgModule({
@@ -24,6 +26,13 @@ import { SimilarPropertyComponent } from './property-details/similar-property/si
       apiKey: 'AIzaSyDtdYPAH703QXocVx3QFpeMVsxkOX0uJnU'
     })
   ],
-  declarations: [PropertyDetailsComponent, ImageSliderComponent, SimilarPropertyComponent]
+  declarations: [
+    PropertyDetailsComponent,
+    ImageSliderComponent,
+    SimilarPropertyComponent,
+    AmenitiesDetailsComponent,
+    HouseDetailsComponent,
+    HouseDetailsComponent
+  ]
 })
 export class DetailsModule { }

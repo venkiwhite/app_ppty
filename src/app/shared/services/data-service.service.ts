@@ -30,6 +30,13 @@ export class DataServiceService {
     return this.http.get(url);
   }
 
+  createAminity(payload) {
+
+    https://pure-spire-63152.herokuapp.com
+    return this.http.post('https://pure-spire-63152.herokuapp.com/bhkUnits', payload)
+
+  }
+  
 }
 
 class StoredResponse {

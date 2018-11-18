@@ -28,9 +28,12 @@ export class ModalPopupComponent implements OnInit {
   }
 
   onSubmitClick(): void {
-    this.dialogRef.close();
+    this.dialogRef.close(this.enquiryForm.value);
   }
 
+  cancel() {
+    this.dialogRef.close();
+  }
   get eForm() {
     return this.enquiryForm.controls;
   }

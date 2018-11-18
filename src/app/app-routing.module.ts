@@ -1,15 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
+import { AdminComponent } from './modules/admin/admin/admin.component';
+import { MainLayoutComponent } from './core/main-layout/main-layout.component';
+import { AdminLayoutComponent } from './core/admin-layout/admin-layout.component';
 
 
 const routes: Routes = [
   {
     path: 'admin',
-    loadChildren: './modules/admin/admin.module#AdminModule'
+    component: AdminLayoutComponent,
+    children: [
+      { 
+        path: '', loadChildren: './modules/admin/admin.module#AdminModule'
+      }
+    ]
+    
   },
   {
     path: 'home',
-    loadChildren: './modules/home/home.module#HomeModule'
+    component: MainLayoutComponent,
+    children: [
+      {
+        path: '', loadChildren: './modules/home/home.module#HomeModule'
+      }
+    ]
+    
   },
   {
     path: 'details',
